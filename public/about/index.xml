@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Terminal</title>
+    <link>/about/</link>
+    <description>Recent content in Abouts on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/about/</guid>
+      <description>About Me Bruno Maisiba Bosire
+Data Analyst | Predictive Modeling | Data Visualization | Ethical Hacking Enthusiast
+Hi, I&amp;rsquo;m Bruno Maisiba Bosire, a results-driven data analyst with a strong foundation in computer science and a proven ability to leverage data for actionable business insights. My expertise spans Python, SQL, and business intelligence tools like Power BI and Tableau, with a particular focus on predictive modeling, trend forecasting, and exploratory data analysis (EDA).</description>
+      <content>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Bruno Maisiba Bosire&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Data Analyst | Predictive Modeling | Data Visualization | Ethical Hacking Enthusiast&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Hi, I&amp;rsquo;m Bruno Maisiba Bosire, a results-driven data analyst with a strong foundation in computer science and a proven ability to leverage data for actionable business insights. My expertise spans Python, SQL, and business intelligence tools like Power BI and Tableau, with a particular focus on predictive modeling, trend forecasting, and exploratory data analysis (EDA). I also hold an Ethical Hacking Badge, which underscores my commitment to security in the digital landscape.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;professional-highlights&#34;&gt;Professional Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Spearheaded data projects at Code Shop Technologies, achieving a 10% reduction in losses and a 20% sales increase within three months.&lt;/li&gt;
+&lt;li&gt;Developed predictive models with 85% accuracy in sales forecasting, processing 10 years of historical data.&lt;/li&gt;
+&lt;li&gt;Created 5 interactive dashboards, enhancing data accessibility and reducing report generation time by 20%.&lt;/li&gt;
+&lt;li&gt;Delivered IoT solutions, including a smart water system that reduced water wastage by 30% and a smart waste management solution cutting fuel costs by 20%.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;academic-background&#34;&gt;Academic Background&lt;/h2&gt;
+&lt;p&gt;I am currently pursuing a Bachelor of Science in Computer Science at Kabarak University, Nakuru, Kenya, expected to graduate in January 2024. My academic projects and training have equipped me with robust skills in data science, IoT applications, and cybersecurity.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Technical Expertise:&lt;/strong&gt; Python, SQL, Docker, Git, Tableau, Power BI, Linux, Splunk&lt;br&gt;
+&lt;strong&gt;Specializations:&lt;/strong&gt; EDA, predictive modeling, data visualization, IoT systems&lt;br&gt;
+&lt;strong&gt;Languages:&lt;/strong&gt; English, Swahili&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;certifications&#34;&gt;Certifications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ethical Hacking Badge&lt;/li&gt;
+&lt;li&gt;CCNA Certification&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:maisibabruno@gmail.com&#34;&gt;maisibabruno@gmail.com&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Phone:&lt;/strong&gt; +254716981689&lt;br&gt;
+&lt;strong&gt;Location:&lt;/strong&gt; Nairobi, Kenya&lt;br&gt;
+&lt;a href=&#34;#&#34;&gt;GitHub&lt;/a&gt; | &lt;a href=&#34;#&#34;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My goal is to apply my technical skills and analytical insights to solve real-world challenges, making data-driven solutions impactful across industries.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
