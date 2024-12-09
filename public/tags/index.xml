@@ -27,5 +27,25 @@
       <content></content>
     </item>
     
+    <item>
+      <title>containers</title>
+      <link>/tags/containers/</link>
+      <pubDate>Mon, 06 May 2024 12:43:45 +0300</pubDate>
+      
+      <guid>/tags/containers/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Mon, 06 May 2024 12:43:45 +0300</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>

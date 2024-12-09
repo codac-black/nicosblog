@@ -20,6 +20,15 @@
     <loc>/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tags/containers/</loc>
+    <lastmod>2024-05-06T12:43:45+03:00</lastmod>
+  </url><url>
+    <loc>/tags/docker/</loc>
+    <lastmod>2024-05-06T12:43:45+03:00</lastmod>
+  </url><url>
+    <loc>/posts/docker-setup/</loc>
+    <lastmod>2024-05-06T12:43:45+03:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
   </url>
 </urlset>
