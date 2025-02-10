@@ -46,6 +46,10 @@ if ($LASTEXITCODE -ge 8) {
     exit 1
 }
 
+Write-Host "Converting Obsidian image links..."
+python .\images.py
+
+
 # Step 2: Build the Hugo site
 Write-Host "Building the Hugo site..."
 try {
