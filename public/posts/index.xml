@@ -264,12 +264,12 @@ Update package lists: Bash sudo apt update # For Debian/Ubuntu-based systems sud
       <guid>/posts/test/</guid>
       <description>xbcnvhb,j
 Prerequisites:
-64-bit Linux system: Verify using uname -m. If it outputs x86_64 or amd64, you&amp;rsquo;re good to go. Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details.![[Pasted image 20250207190209.png]]![[Pasted image 20250207190209.png]] </description>
+64-bit Linux system: Verify using uname -m. If it outputs x86_64 or amd64, you&amp;rsquo;re good to go. Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details.![[Pasted image 20250207190209.png]]![[Pasted image 20250207190209.png]]![[Pasted image 20250210112210.png]]![[Pasted image 20250207190124.png]] </description>
       <content>&lt;p&gt;xbcnvhb,j&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;64-bit Linux system: Verify using &lt;code&gt;uname -m&lt;/code&gt;. If it outputs &lt;code&gt;x86_64&lt;/code&gt; or &lt;code&gt;amd64&lt;/code&gt;, you&amp;rsquo;re good to go.&lt;/li&gt;
-&lt;li&gt;Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details.![[Pasted image 20250207190209.png]]![[Pasted image 20250207190209.png]]&lt;/li&gt;
+&lt;li&gt;Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details.![[Pasted image 20250207190209.png]]![[Pasted image 20250207190209.png]]![[Pasted image 20250210112210.png]]![[Pasted image 20250207190124.png]]&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </item>
