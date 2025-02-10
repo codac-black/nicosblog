@@ -258,10 +258,10 @@ Update package lists: Bash sudo apt update # For Debian/Ubuntu-based systems sud
     
     <item>
       <title>Wireshark Malware Analysis</title>
-      <link>/posts/packet-analysis/unit-42-wireshark-quiz-january-2023/</link>
+      <link>/posts/unit-42-wireshark-quiz-january-2023/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/packet-analysis/unit-42-wireshark-quiz-january-2023/</guid>
+      <guid>/posts/unit-42-wireshark-quiz-january-2023/</guid>
       <description>![[Pasted image 20250207184158.png]]
 Quiz Question Review the pcap and answer the following questions for this month’s Unit 42 Wireshark quiz:
 When did the malicious traffic start in UTC? ![[Pasted image 20250207184736.png]] based on the first DNS interaction we can see the ip 192.168.1.27 What is the victim’s IP address? ![[Pasted image 20250207185128.png]] by visiting the statistics part of wireshark and going to the conversation section and selecting ipv4 you can see that ip addr 192.</description>
