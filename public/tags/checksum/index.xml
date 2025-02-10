@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Forensics on Terminal</title>
-    <link>/tags/forensics/</link>
-    <description>Recent content in Forensics on Terminal</description>
+    <title>checksum on Terminal</title>
+    <link>/tags/checksum/</link>
+    <description>Recent content in checksum on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/checksum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Verify</title>
       <link>/posts/picoctf-forensics/</link>
@@ -44,47 +44,6 @@ Additional details: ssh into the launched instance ssh -p 53041 ctf-player@rhea.
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./decrypt.sh 8eee7195
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;picoCTF&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;trust_but_verify_8eee7195&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/Screenshot%202025-01-14%20210514.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Wireshark Malware Analysis</title>
-      <link>/posts/unit-42-wireshark-quiz-january-2023/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/unit-42-wireshark-quiz-january-2023/</guid>
-      <description>Quiz Question Review the pcap and answer the following questions for this month’s Unit 42 Wireshark quiz:
-When did the malicious traffic start in UTC? based on the first DNS interaction we can see the ip 192.168.1.27 What is the victim’s IP address? by visiting the statistics part of wireshark and going to the conversation section and selecting ipv4 you can see that ip addr 192.1688.1.27 is involved in all the communication What is the victim’s MAC address?</description>
-      <content>&lt;p&gt;&lt;img src=&#34;/images/Pasted%20image%2020250207184158.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;quiz-question&#34;&gt;Quiz Question&lt;/h2&gt;
-&lt;p&gt;Review the pcap and answer the following questions for this month’s Unit 42 Wireshark quiz:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;When did the malicious traffic start in UTC?
-&lt;img src=&#34;/images/Pasted%20image%2020250207184736.png&#34; alt=&#34;Image Description&#34;&gt;
-based on the first DNS interaction we can see the ip &lt;code&gt;192.168.1.27&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What is the victim’s IP address?
-&lt;img src=&#34;/images/Pasted%20image%2020250207185128.png&#34; alt=&#34;Image Description&#34;&gt;
-by visiting the statistics part of wireshark and going to the conversation section and selecting ipv4 you can see that ip addr &lt;code&gt;192.1688.1.27&lt;/code&gt; is involved in all the communication&lt;/li&gt;
-&lt;li&gt;What is the victim’s MAC address?
-by visiting the statistics part of wireshark and going to the conversation section and selecting &lt;code&gt;Ethernet&lt;/code&gt; you can see that mac addr &lt;code&gt;bc:ea:fa:22:74:fb&lt;/code&gt; is involved in all the communication&lt;/li&gt;
-&lt;li&gt;What is the victim’s Windows host name?
-&lt;img src=&#34;/images/Pasted%20image%2020250207185924.png&#34; alt=&#34;Image Description&#34;&gt;
-windows host name we run a search &lt;code&gt;frame matches &amp;quot;desktop&amp;quot;&lt;/code&gt; and from the results we can check the smtp frame
-we can see under the smtp protocol request parameter the host name as &lt;code&gt;DESKTOP-WIN11PC&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What is the victim’s Windows user account name?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190124.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;windows11user&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;How much RAM does the victim’s host have?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190209.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;RAM: 32165.83 MB&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What type of CPU is used by the victim’s host?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190401.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;intel(R) core(TM)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What is the public IP address of the victim’s host?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190513.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;173.66.46.112&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What type of account login data was stolen by the malware? email and web accounts&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     </item>
     

@@ -6,7 +6,47 @@
     <description>Recent content on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Verify</title>
+      <link>/posts/picoctf-forensics/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/picoctf-forensics/</guid>
+      <description>Description People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate.
+Additional details will be available after launching your challenge instance.
+Additional details: ssh into the launched instance ssh -p 53041 ctf-player@rhea.picoctf.net Using the password 1ad5be0d. Accept the fingerprint with yes, and ls once connected to begin.</description>
+      <content>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate.&lt;/p&gt;
+&lt;p&gt;Additional details will be available after launching your challenge instance.&lt;/p&gt;
+&lt;h3 id=&#34;additional-details&#34;&gt;Additional details:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ssh into the launched instance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-ssh&#34; data-lang=&#34;ssh&#34;&gt; ssh -p 53041 ctf-player@rhea.picoctf.net
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Using the password &lt;code&gt;1ad5be0d&lt;/code&gt;. Accept the fingerprint with &lt;code&gt;yes&lt;/code&gt;, and &lt;code&gt;ls&lt;/code&gt; once connected to begin. Remember, in a shell, passwords are hidden!&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Checksum: 5848768e56185707f76c1d74f34f4e03fb0573ecc1ca7b11238007226654bcda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;To decrypt the file once you&amp;rsquo;ve verified the hash, run &lt;code&gt;./decrypt.sh files/&amp;lt;file&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Running to generate hashes for each file and grep with the checksum you were provided to get the file whose checksum matches the one given earlier.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sha256sum ./files/*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Next is to run the decrypt script on the files that you&amp;rsquo;ve acquired on the earlier step in order to get the flag.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./decrypt.sh 8eee7195
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;picoCTF&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;trust_but_verify_8eee7195&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/Screenshot%202025-01-14%20210514.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>SQL Injection 💉</title>
       <link>/posts/sql-injection/</link>
@@ -298,24 +338,6 @@ Hi, I&amp;rsquo;m Bruno Maisiba Bosire, a results-driven data analyst with a str
 &lt;strong&gt;Location:&lt;/strong&gt; Nairobi, Kenya&lt;br&gt;
 &lt;a href=&#34;#&#34;&gt;GitHub&lt;/a&gt; | &lt;a href=&#34;#&#34;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;My goal is to apply my technical skills and analytical insights to solve real-world challenges, making data-driven solutions impactful across industries.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/posts/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/test/</guid>
-      <description>xbcnvhb,j
-Prerequisites:
-64-bit Linux system: Verify using uname -m. If it outputs x86_64 or amd64, you&amp;rsquo;re good to go. Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details. </description>
-      <content>&lt;p&gt;xbcnvhb,j&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;64-bit Linux system: Verify using &lt;code&gt;uname -m&lt;/code&gt;. If it outputs &lt;code&gt;x86_64&lt;/code&gt; or &lt;code&gt;amd64&lt;/code&gt;, you&amp;rsquo;re good to go.&lt;/li&gt;
-&lt;li&gt;Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details.&lt;img src=&#34;/images/Pasted%20image%2020250207190209.png&#34; alt=&#34;Image Description&#34;&gt;&lt;img src=&#34;/images/Pasted%20image%2020250207190209.png&#34; alt=&#34;Image Description&#34;&gt;&lt;img src=&#34;/images/Pasted%20image%2020250210112210.png&#34; alt=&#34;Image Description&#34;&gt;&lt;img src=&#34;/images/Pasted%20image%2020250207190124.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     </item>
     
