@@ -37,6 +37,16 @@
   </url><url>
     <loc>/categories/</loc>
   </url><url>
+    <loc>/tags/forensics/</loc>
+  </url><url>
+    <loc>/tags/malware/</loc>
+  </url><url>
+    <loc>/tags/packets/</loc>
+  </url><url>
     <loc>/showcase/</loc>
+  </url><url>
+    <loc>/tags/wireshark/</loc>
+  </url><url>
+    <loc>/posts/packet-analysis/unit-42-wireshark-quiz-january-2023/</loc>
   </url>
 </urlset>

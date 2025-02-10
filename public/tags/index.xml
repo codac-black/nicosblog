@@ -47,5 +47,45 @@
       <content></content>
     </item>
     
+    <item>
+      <title>Forensics</title>
+      <link>/tags/forensics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/forensics/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Malware</title>
+      <link>/tags/malware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/malware/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Packets</title>
+      <link>/tags/packets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/packets/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Wireshark</title>
+      <link>/tags/wireshark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wireshark/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>
