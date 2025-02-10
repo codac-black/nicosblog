@@ -1,0 +1,8 @@
+img {
+    display: block;
+    max-width: 100%;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 8px;
+    overflow: hidden
+}
