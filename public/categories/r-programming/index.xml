@@ -6,11 +6,11 @@
     <description>Recent content in R programming on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 May 2025 16:00:58 +0300</lastBuildDate><atom:link href="/categories/r-programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 May 2025 16:14:38 +0300</lastBuildDate><atom:link href="/categories/r-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> Index</title>
       <link>/posts/r-programming/</link>
-      <pubDate>Sat, 31 May 2025 16:00:58 +0300</pubDate>
+      <pubDate>Sat, 31 May 2025 16:14:38 +0300</pubDate>
       
       <guid>/posts/r-programming/</guid>
       <description>title: &amp;ldquo;R Programming&amp;rdquo; description: &amp;ldquo;Posts about R Programming&amp;rdquo; R Programming This section contains posts related to R Programming.</description>
@@ -25,7 +25,7 @@ description: &amp;ldquo;Posts about R Programming&amp;rdquo;&lt;/h2&gt;
     <item>
       <title>Intro To R Programming</title>
       <link>/posts/r-programming/intro-to-r-programming/</link>
-      <pubDate>Sat, 31 May 2025 16:00:58 +0300</pubDate>
+      <pubDate>Sat, 31 May 2025 16:14:38 +0300</pubDate>
       
       <guid>/posts/r-programming/intro-to-r-programming/</guid>
       <description>section: &amp;ldquo;R programming&amp;rdquo; categories: [&amp;ldquo;R programming&amp;rdquo;] title: &amp;ldquo;Intro To R Programming&amp;rdquo; date: 2025-05-31 Basics of R 1. Variables variables are used to hold values of different data types
@@ -167,7 +167,7 @@ date: 2025-05-31&lt;/h2&gt;
     <item>
       <title>Matrix</title>
       <link>/posts/r-programming/matrix/</link>
-      <pubDate>Sat, 31 May 2025 16:00:58 +0300</pubDate>
+      <pubDate>Sat, 31 May 2025 16:14:38 +0300</pubDate>
       
       <guid>/posts/r-programming/matrix/</guid>
       <description>section: &amp;ldquo;R programming&amp;rdquo; categories: [&amp;ldquo;R programming&amp;rdquo;] title: &amp;ldquo;Matrix&amp;rdquo; date: 2025-05-31 What&amp;rsquo;s a matrix? In R, a matrix is a collection of elements of the same data type (numeric, character, or logical) arranged into a fixed number of rows and columns. Since you are only working with rows and columns, a matrix is called two-dimensional.
@@ -244,7 +244,7 @@ Since you are only working with rows and columns, a matrix is called two-dimensi
     <item>
       <title>Vectors</title>
       <link>/posts/r-programming/vectors/</link>
-      <pubDate>Sat, 31 May 2025 16:00:58 +0300</pubDate>
+      <pubDate>Sat, 31 May 2025 16:14:38 +0300</pubDate>
       
       <guid>/posts/r-programming/vectors/</guid>
       <description>section: &amp;ldquo;R programming&amp;rdquo; categories: [&amp;ldquo;R programming&amp;rdquo;] title: &amp;ldquo;Vectors&amp;rdquo; date: 2025-05-31 Vectors are one-dimension arrays that can hold numeric data, character data, or logical data. In other words, a vector is a simple tool to store data.
