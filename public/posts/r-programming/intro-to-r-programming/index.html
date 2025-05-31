@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Basics of R 1. Variables variables are used to hold values of different data types
+syntax name_of_variable &amp;lt;- value
+name &amp;lt;- &amp;#34;mike&amp;#34; # print out the results name # Assign a value to the variables my_apples and my_oranges my_apples &amp;lt;- 5 my_oranges &amp;lt;- 6 # Add these two variables together my_fruit &amp;lt;- my_apples &#43; my_oranges # Create the variable my_fruit my_fruit 2. Arithmetic with R In its most basic form, R can be used as a simple calculator." />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/r-programming/intro-to-r-programming/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.c4bbe9a7514d438a2e71e83e61d10030f7225459c1fecf5dbf7c83706d4877da.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="Basics of R 1. Variables variables are used to hold values of different data types
+syntax name_of_variable &amp;lt;- value
+name &amp;lt;- &amp;#34;mike&amp;#34; # print out the results name # Assign a value to the variables my_apples and my_oranges my_apples &amp;lt;- 5 my_oranges &amp;lt;- 6 # Add these two variables together my_fruit &amp;lt;- my_apples &#43; my_oranges # Create the variable my_fruit my_fruit 2. Arithmetic with R In its most basic form, R can be used as a simple calculator." />
+<meta property="og:url" content="/posts/r-programming/intro-to-r-programming/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container full">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/r-programming/intro-to-r-programming/"></a>
+  </h1>
+  <div class="post-meta"></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="basics-of-r">Basics of R<a href="#basics-of-r" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="1-variables">1. Variables<a href="#1-variables" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>variables are used to hold values of different data types</p>
+<p><code>syntax</code>  <strong>name_of_variable  &lt;- value</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>name <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;mike&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># print out the results</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assign a value to the variables my_apples and my_oranges</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_apples <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_oranges <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add these two variables together</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_fruit <span style="color:#f92672">&lt;-</span> my_apples <span style="color:#f92672">+</span> my_oranges
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the variable my_fruit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_fruit
+</span></span></code></pre></div><h2 id="2-arithmetic-with-r">2. Arithmetic with R<a href="#2-arithmetic-with-r" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>In its most basic form, R can be used as a simple calculator. Consider the following arithmetic operators:</p>
+<ul>
+<li>Addition: <code>+</code></li>
+<li>Subtraction: <code>-</code></li>
+<li>Multiplication: <code>*</code></li>
+<li>Division: <code>/</code></li>
+<li>Exponentiation: <code>^</code></li>
+<li>Modulo: <code>%%</code></li>
+</ul>
+<p>The last two might need some explaining:</p>
+<ul>
+<li>The <code>^</code> operator raises the number to its left to the power of the number to its right: for example <code>3^2</code> is 9.</li>
+<li>The modulo returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 or <code>5 %% 3</code> is 2.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># An addition</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A subtraction</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A multiplication</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e"># A division</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exponentiation</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>^5
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Modulo</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">28</span><span style="color:#f92672">%%</span><span style="color:#ae81ff">6</span>
+</span></span></code></pre></div><h2 id="3--basic-data-types-in-r">3.  Basic data types in R<a href="#3--basic-data-types-in-r" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>R works with numerous data types. Some of the most basic types to get started are:</p>
+<ul>
+<li>Decimal values like <code>4.5</code> are called <strong>numerics</strong>.</li>
+<li>Whole numbers like <code>4</code> are called <strong>integers</strong>. Integers are also numerics.</li>
+<li>Boolean values (<code>TRUE</code> or <code>FALSE</code>) are called <strong>logical</strong>.</li>
+<li>Text (or string) values are called <strong>characters</strong>.</li>
+</ul>
+<p>Note how the quotation marks in the editor indicate that <code>&quot;some text&quot;</code> is a string.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># Change my_numeric to be 42</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_numeric <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Change my_character to be &#34;universe&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_character <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;universe&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Change my_logical to be FALSE</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_logical <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">FALSE</span>
+</span></span></code></pre></div><p>one can check the data type of a given variable by using the <strong>class()</strong> function</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># Declare variables of different types</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_numeric <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_character <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;universe&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_logical <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">FALSE</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check class of my_numeric</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">class</span>(my_numeric)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check class of my_character</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">class</span>(my_character)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check class of my_logical</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">class</span>(my_logical)
+</span></span></code></pre></div>
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/docker-setup/" class="button inline prev">
+        Docker setup 🐳
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/r-programming/matrix/" class="button inline next">
+        
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
