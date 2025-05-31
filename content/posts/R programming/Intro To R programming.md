@@ -1,6 +1,6 @@
 ﻿---
 title: "Intro To R Programming"
-date: 2025-05-31T16:19:35+03:00
+date: 2025-05-31T16:24:17+03:00
 section: "R programming"
 categories: ["R programming"]
 ---
@@ -17,7 +17,7 @@ variables are used to hold values of different data types
 
 `syntax`  **name_of_variable  <- value**
 
-```R
+```r
 name <- "mike"
 
 # print out the results
@@ -59,36 +59,26 @@ The last two might need some explaining:
 - TheÂ `^`Â operator raises the number to its left to the power of the number to its right: for exampleÂ `3^2`Â is 9.
 - The modulo returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 orÂ `5 %% 3`Â is 2.
 
-```R
+```r
 #Â AnÂ addition
 
-5Â +Â 5Â 
+5Â +Â 5Â  
 
-  
-
-#Â AÂ subtraction
+#Â A subtraction
 
 5Â -Â 5Â 
-
-  
 
 #Â AÂ multiplication
 
 3Â *Â 5
 
-  
-
-Â #Â AÂ division
+#Â AÂ division
 
 (5Â +Â 5)Â /Â 2Â 
-
-  
 
 #Â Exponentiation
 
 2^5
-
-  
 
 #Â Modulo
 
@@ -105,18 +95,14 @@ R works with numerous data types. Some of the most basic types to get started ar
 
 Note how the quotation marks in the editor indicate thatÂ `"some text"`Â is a string.
 
-```R
+```r
 #Â ChangeÂ my_numericÂ toÂ beÂ 42
 
 my_numericÂ <-Â 42
 
-  
-
 #Â ChangeÂ my_characterÂ toÂ beÂ "universe"
 
 my_characterÂ <-Â "universe"
-
-  
 
 #Â ChangeÂ my_logicalÂ toÂ beÂ FALSE
 
@@ -125,7 +111,7 @@ my_logicalÂ <-Â FALSE
 
 one can check the data type of a given variable by using the **class()** function 
 
-```R
+```r
 #Â DeclareÂ variablesÂ ofÂ differentÂ types
 
 my_numericÂ <-Â 42
@@ -134,21 +120,14 @@ my_characterÂ <-Â "universe"
 
 my_logicalÂ <-Â FALSEÂ 
 
-  
-
 #Â CheckÂ classÂ ofÂ my_numeric
 
 class(my_numeric)
 
-  
-
 #Â CheckÂ classÂ ofÂ my_character
-
-  
 
 class(my_character)
 
 #Â CheckÂ classÂ ofÂ my_logical
-
 class(my_logical)
 ```

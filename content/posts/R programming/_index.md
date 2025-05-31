@@ -1,6 +1,6 @@
 ﻿---
 title: " Index"
-date: 2025-05-31T16:19:35+03:00
+date: 2025-05-31T16:24:17+03:00
 section: "R programming"
 categories: ["R programming"]
 ---
