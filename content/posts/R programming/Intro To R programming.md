@@ -1,3 +1,15 @@
+﻿---
+title: "Intro To R Programming"
+date: 2025-05-31T16:00:58+03:00
+section: "R programming"
+categories: ["R programming"]
+---
+---
+section: "R programming"
+categories: ["R programming"]
+title: "Intro To R Programming"
+date: 2025-05-31
+---
 ## Basics of R 
 
 ## 1. Variables
@@ -12,21 +24,21 @@ name <- "mike"
 
 name
 
-# Assign a value to the variables my_apples and my_oranges
+#Â AssignÂ aÂ valueÂ toÂ theÂ variablesÂ my_applesÂ andÂ my_oranges
 
-my_apples <- 5
-
-  
-
-my_oranges <- 6
-
-# Add these two variables together
-
-my_fruit <- my_apples + my_oranges
+my_applesÂ <-Â 5
 
   
 
-# Create the variable my_fruit
+my_orangesÂ <-Â 6
+
+#Â AddÂ theseÂ twoÂ variablesÂ together
+
+my_fruitÂ <-Â my_applesÂ +Â my_oranges
+
+  
+
+#Â CreateÂ theÂ variableÂ my_fruit
 
 my_fruit
 ```
@@ -35,50 +47,50 @@ my_fruit
 
 In its most basic form, R can be used as a simple calculator. Consider the following arithmetic operators:
 
-- Addition: `+`
-- Subtraction: `-`
-- Multiplication: `*`
-- Division: `/`
-- Exponentiation: `^`
-- Modulo: `%%`
+- Addition:Â `+`
+- Subtraction:Â `-`
+- Multiplication:Â `*`
+- Division:Â `/`
+- Exponentiation:Â `^`
+- Modulo:Â `%%`
 
 The last two might need some explaining:
 
-- The `^` operator raises the number to its left to the power of the number to its right: for example `3^2` is 9.
-- The modulo returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 or `5 %% 3` is 2.
+- TheÂ `^`Â operator raises the number to its left to the power of the number to its right: for exampleÂ `3^2`Â is 9.
+- The modulo returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 orÂ `5 %% 3`Â is 2.
 
 ```R
-# An addition
+#Â AnÂ addition
 
-5 + 5 
-
-  
-
-# A subtraction
-
-5 - 5 
+5Â +Â 5Â 
 
   
 
-# A multiplication
+#Â AÂ subtraction
 
-3 * 5
-
-  
-
- # A division
-
-(5 + 5) / 2 
+5Â -Â 5Â 
 
   
 
-# Exponentiation
+#Â AÂ multiplication
+
+3Â *Â 5
+
+  
+
+Â #Â AÂ division
+
+(5Â +Â 5)Â /Â 2Â 
+
+  
+
+#Â Exponentiation
 
 2^5
 
   
 
-# Modulo
+#Â Modulo
 
 28%%6
 ```
@@ -86,57 +98,57 @@ The last two might need some explaining:
 
 R works with numerous data types. Some of the most basic types to get started are:
 
-- Decimal values like `4.5` are called **numerics**.
-- Whole numbers like `4` are called **integers**. Integers are also numerics.
-- Boolean values (`TRUE` or `FALSE`) are called **logical**.
-- Text (or string) values are called **characters**.
+- Decimal values likeÂ `4.5`Â are calledÂ **numerics**.
+- Whole numbers likeÂ `4`Â are calledÂ **integers**. Integers are also numerics.
+- Boolean values (`TRUE`Â orÂ `FALSE`) are calledÂ **logical**.
+- Text (or string) values are calledÂ **characters**.
 
-Note how the quotation marks in the editor indicate that `"some text"` is a string.
+Note how the quotation marks in the editor indicate thatÂ `"some text"`Â is a string.
 
 ```R
-# Change my_numeric to be 42
+#Â ChangeÂ my_numericÂ toÂ beÂ 42
 
-my_numeric <- 42
-
-  
-
-# Change my_character to be "universe"
-
-my_character <- "universe"
+my_numericÂ <-Â 42
 
   
 
-# Change my_logical to be FALSE
+#Â ChangeÂ my_characterÂ toÂ beÂ "universe"
 
-my_logical <- FALSE
+my_characterÂ <-Â "universe"
+
+  
+
+#Â ChangeÂ my_logicalÂ toÂ beÂ FALSE
+
+my_logicalÂ <-Â FALSE
 ```
 
 one can check the data type of a given variable by using the **class()** function 
 
 ```R
-# Declare variables of different types
+#Â DeclareÂ variablesÂ ofÂ differentÂ types
 
-my_numeric <- 42
+my_numericÂ <-Â 42
 
-my_character <- "universe"
+my_characterÂ <-Â "universe"
 
-my_logical <- FALSE 
+my_logicalÂ <-Â FALSEÂ 
 
   
 
-# Check class of my_numeric
+#Â CheckÂ classÂ ofÂ my_numeric
 
 class(my_numeric)
 
   
 
-# Check class of my_character
+#Â CheckÂ classÂ ofÂ my_character
 
   
 
 class(my_character)
 
-# Check class of my_logical
+#Â CheckÂ classÂ ofÂ my_logical
 
 class(my_logical)
 ```

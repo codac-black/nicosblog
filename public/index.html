@@ -181,25 +181,92 @@
     
       <article class="post on-list">
         <h2 class="post-title">
+          <a href="/posts/r-programming/intro-to-r-programming/">Intro To R Programming</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2025-05-31</time></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            section: &ldquo;R programming&rdquo; categories: [&ldquo;R programming&rdquo;] title: &ldquo;Intro To R Programming&rdquo; date: 2025-05-31 Basics of R 1. Variables variables are used to hold values of different data types
+syntax name_of_variable &lt;- value
+name &lt;- &#34;mike&#34; # print out the results name #Â AssignÂ aÂ valueÂ toÂ theÂ variablesÂ my_applesÂ andÂ my_oranges my_applesÂ &lt;-Â 5 my_orangesÂ &lt;-Â 6 #Â AddÂ theseÂ twoÂ variablesÂ together my_fruitÂ &lt;-Â my_applesÂ +Â my_oranges #Â CreateÂ theÂ variableÂ my_fruit my_fruit 2.
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/r-programming/intro-to-r-programming/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="/posts/r-programming/matrix/">Matrix</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2025-05-31</time></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            section: &ldquo;R programming&rdquo; categories: [&ldquo;R programming&rdquo;] title: &ldquo;Matrix&rdquo; date: 2025-05-31 What&rsquo;s a matrix? In R, a matrix is a collection of elements of the same data type (numeric, character, or logical) arranged into a fixed number of rows and columns. Since you are only working with rows and columns, a matrix is called two-dimensional.
+You can construct a matrix in R with theÂ ==matrix()==Â function.
+matrix(1:9Â ,byrow=TRUEÂ ,nrow=3) In theÂ matrix()Â function:
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/r-programming/matrix/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="/posts/r-programming/vectors/">Vectors</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2025-05-31</time></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            section: &ldquo;R programming&rdquo; categories: [&ldquo;R programming&rdquo;] title: &ldquo;Vectors&rdquo; date: 2025-05-31 Vectors are one-dimension arrays that can hold numeric data, character data, or logical data. In other words, a vector is a simple tool to store data.
+In R vectors are created using the combine function ==c()==.
+numeric_vectors &lt;- c(1,2,3,4,5) character_vector &lt;- c(&#34;A&#34;,&#34;B&#34;,&#34;c&#34;) boolean_vector &lt;- c(TRUE, FALSE) mixed &lt;- c(1,2,&#39;a&#39;,&#39;b&#39;) You can give a name to the elements of a vector with theÂ ==names()==Â function
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/r-programming/vectors/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
           <a href="/posts/picoctf-forensics/">Verify</a>
         </h2>
 
         <div class="post-meta"><time class="post-date">2025-01-14</time><span class="post-author">Nicos</span></div>
 
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/forensics/">Forensics</a>&nbsp;
-            
-            #<a href="/tags/picoctf/">picoCTF</a>&nbsp;
-            
-            #<a href="/tags/grep/">grep</a>&nbsp;
-            
-            #<a href="/tags/checksum/">checksum</a>&nbsp;
-            
-            #<a href="/tags/encryption/">encryption</a>&nbsp;
-            
-          </span>
         
 
         
@@ -228,14 +295,6 @@ Additional details: ssh into the launched instance ssh -p 53041 ctf-player@rhea.
         <div class="post-meta"><time class="post-date">2024-12-09</time></div>
 
         
-          <span class="post-tags">
-            
-            #<a href="/tags/sql/">sql</a>&nbsp;
-            
-            #<a href="/tags/hacking/">hacking</a>&nbsp;
-            
-          </span>
-        
 
         
 
@@ -251,96 +310,6 @@ userid first_name last_name department salary($) auth_tan 32147 Paulina Traves A
         
           <div>
             <a class="read-more button inline" href="/posts/sql-injection/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="/posts/docker-setup/">Docker setup 🐳</a>
-        </h2>
-
-        <div class="post-meta"><time class="post-date">2024-05-06</time><span class="post-author">Nicos</span></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/docker/">docker</a>&nbsp;
-            
-            #<a href="/tags/containers/">containers</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            Docker Installation on Linux 🐋 Prerequisites:
-64-bit Linux system: Verify using uname -m. If it outputs x86_64 or amd64, you&rsquo;re good to go. Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&rsquo;s documentation for details. Steps:
-Update package lists: Bash sudo apt update # For Debian/Ubuntu-based systems sudo yum update # For Red Hat/CentOS-based systems Install dependencies: Bash sudo apt install apt-transport-https ca-certificates curl software-properties-common # For Debian/Ubuntu-based systems sudo yum groupinstall &#34;Development Tools&#34; # For Red Hat/CentOS-based systems Add Docker repository (choose one based on your distribution): Debian/Ubuntu:
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/docker-setup/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="/posts/r-programming/intro-to-r-programming/"></a>
-        </h2>
-
-        <div class="post-meta"></div>
-
-        
-
-        
-
-
-        <div class="post-content">
-          
-            Basics of R 1. Variables variables are used to hold values of different data types
-syntax name_of_variable &lt;- value
-name &lt;- &#34;mike&#34; # print out the results name # Assign a value to the variables my_apples and my_oranges my_apples &lt;- 5 my_oranges &lt;- 6 # Add these two variables together my_fruit &lt;- my_apples + my_oranges # Create the variable my_fruit my_fruit 2. Arithmetic with R In its most basic form, R can be used as a simple calculator.
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/r-programming/intro-to-r-programming/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="/posts/r-programming/matrix/"></a>
-        </h2>
-
-        <div class="post-meta"></div>
-
-        
-
-        
-
-
-        <div class="post-content">
-          
-            What&rsquo;s a matrix? In R, a matrix is a collection of elements of the same data type (numeric, character, or logical) arranged into a fixed number of rows and columns. Since you are only working with rows and columns, a matrix is called two-dimensional.
-You can construct a matrix in R with the ==matrix()== function.
-matrix(1:9 ,byrow=TRUE ,nrow=3) In the matrix() function:
-The first argument is the collection of elements that R will arrange into the rows and columns of the matrix.
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/r-programming/matrix/">Read more</a>
           </div>
         
       </article>

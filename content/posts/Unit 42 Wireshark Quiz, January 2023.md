@@ -3,12 +3,7 @@ title: Wireshark Malware Analysis
 date: 2025-02-7
 author: Nicos
 draft: false
-tags:
-  - Forensics
-  - Malware
-  - Wireshark
-  - Packets
-
+tags: 
 ---
 ![Image Description](/images/Pasted%20image%2020250207184158.png)
 

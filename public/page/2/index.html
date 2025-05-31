@@ -181,10 +181,10 @@
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="/posts/r-programming/vectors/"></a>
+          <a href="/posts/docker-setup/">Docker setup 🐳</a>
         </h2>
 
-        <div class="post-meta"></div>
+        <div class="post-meta"><time class="post-date">2024-05-06</time><span class="post-author">Nicos</span></div>
 
         
 
@@ -193,16 +193,15 @@
 
         <div class="post-content">
           
-            Vectors are one-dimension arrays that can hold numeric data, character data, or logical data. In other words, a vector is a simple tool to store data.
-In R vectors are created using the combine function ==c()==.
-numeric_vectors &lt;- c(1,2,3,4,5) character_vector &lt;- c(&#34;A&#34;,&#34;B&#34;,&#34;c&#34;) boolean_vector &lt;- c(TRUE, FALSE) mixed &lt;- c(1,2,&#39;a&#39;,&#39;b&#39;) You can give a name to the elements of a vector with the ==names()== function
-# Poker winnings from Monday to Friday poker_vector &lt;- c(140, -50, 20, -120, 240) # Roulette winnings from Monday to Friday roulette_vector &lt;- c(-24, -50, 100, -350, 10) # Assign days as names of poker_vector names(poker_vector) &lt;- c(&#34;Monday&#34;, &#34;Tuesday&#34;, &#34;Wednesday&#34;, &#34;Thursday&#34;, &#34;Friday&#34;) # Assign days as names of roulette_vector names(roulette_vector) &lt;- c(&#34;Monday&#34;, &#34;Tuesday&#34;, &#34;Wednesday&#34;, &#34;Thursday&#34;, &#34;Friday&#34;) # The variable days_vector days_vector &lt;- c(&#34;Monday&#34;, &#34;Tuesday&#34;, &#34;Wednesday&#34;, &#34;Thursday&#34;, &#34;Friday&#34;) # Assign the names of the day to roulette_vector and poker_vector names(poker_vector) &lt;- c(days_vector) names(roulette_vector) &lt;-c(days_vector) Vector selection To select elements of a vector (and later matrices, data frames, …), you can use square brackets.
+            Docker Installation on Linux 🐋 Prerequisites:
+64-bit Linux system: Verify using uname -m. If it outputs x86_64 or amd64, you&rsquo;re good to go. Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&rsquo;s documentation for details. Steps:
+Update package lists: Bash sudo apt update # For Debian/Ubuntu-based systems sudo yum update # For Red Hat/CentOS-based systems Install dependencies: Bash sudo apt install apt-transport-https ca-certificates curl software-properties-common # For Debian/Ubuntu-based systems sudo yum groupinstall &#34;Development Tools&#34; # For Red Hat/CentOS-based systems Add Docker repository (choose one based on your distribution): Debian/Ubuntu:
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/r-programming/vectors/">Read more</a>
+            <a class="read-more button inline" href="/posts/docker-setup/">Read more</a>
           </div>
         
       </article>
@@ -214,18 +213,6 @@ numeric_vectors &lt;- c(1,2,3,4,5) character_vector &lt;- c(&#34;A&#34;,&#34;B&#
 
         <div class="post-meta"><span class="post-author">Nicos</span></div>
 
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/forensics/">Forensics</a>&nbsp;
-            
-            #<a href="/tags/malware/">Malware</a>&nbsp;
-            
-            #<a href="/tags/wireshark/">Wireshark</a>&nbsp;
-            
-            #<a href="/tags/packets/">Packets</a>&nbsp;
-            
-          </span>
         
 
         

@@ -2,11 +2,8 @@
 title: SQL Injection 💉
 date: 2024-12-09
 draft: false
-tags:
-  - sql
-  - hacking
+tags: 
 ---
-
 # 1. What is SQL?
 
 SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.
