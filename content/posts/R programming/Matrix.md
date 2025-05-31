@@ -1,6 +1,6 @@
 ﻿---
 title: "Matrix"
-date: 2025-05-31T16:14:38+03:00
+date: 2025-05-31T16:19:35+03:00
 section: "R programming"
 categories: ["R programming"]
 ---
