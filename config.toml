@@ -64,13 +64,13 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Nicos' Portfolio"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
-      owner = ""
-      keywords = ""
-      copyright = ""
+      subtitle = "Cybersecurity Professional & Software Developer"
+      owner = "Nicos"
+      keywords = "cybersecurity, software development, R programming, Python"
+      copyright = "© 2024 Nicos. All rights reserved."
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
@@ -82,7 +82,7 @@ paginate = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "Nicos"
         logoHomeLink = "/"
 
       [languages.en.menu]
@@ -91,18 +91,18 @@ paginate = 5
           name = "About"
           url = "/about"
         [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/showcase"
+          identifier = "resume"
+          name = "Resume"
+          url = "/resume"
         [[languages.en.menu.main]]
-          identifier = "r-programming"
-          name = "R Programming"
-          url = "/posts/r-programming/"
+          identifier = "projects"
+          name = "Projects"
+          url = "/projects"
         [[languages.en.menu.main]]
-          identifier = "docker"
-          name = "Docker"
-          url = "/posts/docker-setup/"
+          identifier = "blog"
+          name = "Blog"
+          url = "/posts"
         [[languages.en.menu.main]]
-          identifier = "ctf"
-          name = "CTF"
-          url = "/posts/ctf/"
+          identifier = "contact"
+          name = "Contact"
+          url = "/about#contact"
