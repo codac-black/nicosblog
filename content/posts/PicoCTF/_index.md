@@ -1,6 +1,6 @@
 ---
 title: " Index"
-date: 2025-06-10T16:53:53+03:00
+date: 2025-06-10T16:59:30+03:00
 section: "PicoCTF"
 categories: ["PicoCTF"]
 ---

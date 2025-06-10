@@ -1,6 +1,16 @@
 ---
-title = "home"
+title: "Welcome"
+date: 2024-03-19
+draft: false
 ---
+
+# Welcome to My Portfolio
+
+I'm Bruno Bosire, a cybersecurity professional and software developer. This site showcases my work, projects, and thoughts on technology and security.
+
+## Recent Posts
+
+Check out my latest blog posts below, or explore my [projects](/projects) and [resume](/resume).
 
 <style>
 @keyframes fadeInUp {

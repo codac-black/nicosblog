@@ -1,6 +1,6 @@
 ---
 title: "Characteristics Of Cloud Native Architecture"
-date: 2025-06-10T16:53:52+03:00
+date: 2025-06-10T16:59:30+03:00
 section: "Kubernetes and Cloud Native Essentials (LFS250)"
 categories: ["Kubernetes and Cloud Native Essentials (LFS250)", "Cloud Native Architecture"]
 ---
