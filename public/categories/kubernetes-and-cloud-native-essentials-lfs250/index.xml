@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes and Cloud Native Essentials (LFS250) on Terminal</title>
+    <link>/categories/kubernetes-and-cloud-native-essentials-lfs250/</link>
+    <description>Recent content in Kubernetes and Cloud Native Essentials (LFS250) on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jun 2025 17:16:34 +0300</lastBuildDate><atom:link href="/categories/kubernetes-and-cloud-native-essentials-lfs250/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Characteristics Of Cloud Native Architecture</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/characteristics-of-cloud-native-architecture/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/characteristics-of-cloud-native-architecture/</guid>
+      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Characteristics Of Cloud Native Architecture&amp;rdquo; date: 2025-04-30 Characteristics of Cloud Native Architecture Cloud Native Architecture Characteristics:
+Close High level of automation
+To manage all the moving parts of your cloud native application, automation is recommended in every step from development to deployment. This can be achieved by using modern automation tools and Continuous Integration/Continuous Delivery (CI/CD) pipelines (we will talk about pipelines more later in the course, but for now, please know that a CI/CD pipeline is a concept that can be used for the multiple steps that are needed when you deliver a new version of your software) that are backed by a version control system like git.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
+categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;]
+title: &amp;ldquo;Characteristics Of Cloud Native Architecture&amp;rdquo;
+date: 2025-04-30&lt;/h2&gt;
+&lt;h1 id=&#34;characteristics-of-cloud-native-architecture&#34;&gt;Characteristics of Cloud Native Architecture&lt;/h1&gt;
+&lt;p&gt;Cloud Native Architecture Characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Close High level of automation&lt;/p&gt;
+&lt;p&gt;To manage all the moving parts of your cloud native application, automation is recommended in every step from development to deployment. This can be achieved by using modern automation tools and &lt;em&gt;Continuous Integration/Continuous Delivery (CI/CD)&lt;/em&gt; pipelines (we will talk about pipelines more later in the course, but for now, please know that a CI/CD pipeline is a concept that can be used for the multiple steps that are needed when you deliver a new version of your software) that are backed by a version control system like git. Building, testing and deploying applications as well as infrastructure with minimal human involvement allows for fast, frequent and incremental changes to production. A reliable automated system also allows for much easier disaster recovery if you have to rebuild your whole system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Close Self healing&lt;/p&gt;
+&lt;p&gt;Applications and infrastructure fail from time to time. This is expected, and therefore cloud native application frameworks and infrastructure components include health checks which help monitor your application from the inside and automatically restart them if necessary. Additionally, since the application has been compartmentalized, there is a chance that only parts of your application stop working or get slower, while other parts don’t.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Close Scalable&lt;/p&gt;
+&lt;p&gt;Scaling your application describes the process of handling more load while still providing a pleasant user experience. One way of scaling can be starting multiple copies of the same application and distributing the load across them. Automating this behavior based on application metrics like CPU or memory can also ensure availability and performance of your services.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Close (Cost-) Efficient&lt;/p&gt;
+&lt;p&gt;Just like scaling up your application for high traffic situations, scaling down your application and the usage-based pricing models of cloud providers can save costs if traffic is low. To optimize your infrastructure usage, orchestration systems like &lt;em&gt;Kubernetes&lt;/em&gt; can help with more efficient and denser placing of applications.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Close Easy to maintain&lt;/p&gt;
+&lt;p&gt;Using &lt;em&gt;Microservices&lt;/em&gt; allows to break down applications in smaller pieces and make them more portable, easier to test and to distribute across multiple teams.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Close Secure by default&lt;/p&gt;
+&lt;p&gt;Cloud environments are often shared between multiple customers or teams, which calls for different security models. In the past, a lot of systems were divided in different security zones that denied access from different networks or people. Once you’re inside a zone, you can access every system inside. Patterns like &lt;a href=&#34;https://en.wikipedia.org/wiki/Zero_trust_security_model&#34;&gt;zero trust computing&lt;/a&gt; mitigates that by requiring authentication from every user and process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A good baseline and starting point for your cloud native journey is &lt;a href=&#34;https://12factor.net/&#34;&gt;the twelve-factor app&lt;/a&gt;. The twelve factor app is a guideline for developing cloud native applications, which starts with simple things like version control of your codebase, environment-aware configuration and more sophisticated patterns like statelessness and concurrency of your application.&lt;/p&gt;
+&lt;p&gt;While these patterns and technologies provide full advantage if they run in the cloud, they can also offer a lot of benefits when applied to on-premises systems. Last but not least, they allow a smoother transition if you migrate your applications and infrastructure to the cloud.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Cloud Native Architecture</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/</guid>
+      <description>title: Cloud Native Architecture date: 4-30-2025 author: Bruno draft: true tags: section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] In this chapter, you will learn about the principles of modern application architecture, often referred to as Cloud Native Architecture. We will discover what makes these applications native to cloud systems and how they differ from traditional approaches.
+Learning Objectives By the end of this chapter, you should be able to:</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;categories-kubernetes-and-cloud-native-essentials-lfs250-cloud-native-architecture&#34;&gt;title: Cloud Native Architecture
+date: 4-30-2025
+author: Bruno
+draft: true
+tags:
+section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
+categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;]&lt;/h2&gt;
+&lt;p&gt;In this chapter, you will learn about the principles of modern application architecture, often referred to as Cloud Native Architecture. We will discover what makes these applications &lt;em&gt;native&lt;/em&gt; to cloud systems and how they differ from traditional approaches.&lt;/p&gt;
+&lt;h1 id=&#34;learning-objectives&#34;&gt;Learning Objectives&lt;/h1&gt;
+&lt;p&gt;By the end of this chapter, you should be able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss the characteristics of Cloud Native Architecture&lt;/li&gt;
+&lt;li&gt;Explain the benefits of autoscaling and serverless patterns&lt;/li&gt;
+&lt;li&gt;Understand the importance of open standards and community projects in cloud native environments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;cloud-native-architecture-fundamentals&#34;&gt;Cloud Native Architecture Fundamentals&lt;/h1&gt;
+&lt;p&gt;At the core, the idea of cloud native architecture is to optimize your software for cost efficiency, reliability and faster time-to-market by using a combination of cultural, technological and architectural design patterns.&lt;/p&gt;
+&lt;p&gt;The term &lt;em&gt;cloud native&lt;/em&gt; can be found in various definitions, some of which have a focus on technologies, while others may focus on the cultural side of things.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/cncf/toc/blob/main/DEFINITION.md&#34;&gt;Cloud Native Computing Foundation defines it&lt;/a&gt; as following:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.&lt;/em&gt; &lt;em&gt;[&amp;hellip;]”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Traditional or legacy applications are usually designed with a monolithic approach in mind, meaning that they are self-contained and include all the functionality and components that are needed to fulfill a task. A monolithic application usually has a single code base and is provided as a single binary file that can run on a server.&lt;/p&gt;
+&lt;p&gt;If you think of E-Commerce software for an online shop, a monolithic application would include every functionality from the graphical user interface, listing products, shopping cart, checkout, processing orders, and much more.&lt;/p&gt;
+&lt;p&gt;While it can be very easy to develop and deploy an application in this format, it can be equally difficult to manage complexity, scale development across multiple teams, implement changes fast, and be able to scale the application out efficiently when it comes under a lot of load.&lt;/p&gt;
+&lt;p&gt;Cloud native architecture can provide solutions for the increasing complexity of applications and the growing demand by users. The basic idea is to break down your application in smaller pieces which makes them more manageable. Instead of providing all functionality in a single application, you have multiple decoupled applications that communicate with each other in a network. If we stick to the example from before, you could have an app for your user interface, your checkout and everything else. These small, independent applications with a clearly defined scope of functions are often referred to as &lt;em&gt;microservices&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;That makes it possible to have multiple teams, each holding ownership of different functions of your application, but also operate and scale them individually. For example, if a lot of people try to buy products, you’re able to scale services that have a lot of load like the shopping cart and checkout.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;img src=&#34;https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/ch9ud860v954-Monolithicvsmicroservices.png&#34; alt=&#34;Monolithic vs Microservices Architecture&#34;&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;**Monolithic vs Microservices Architecture&lt;br&gt;
+**&lt;/p&gt;
+&lt;p&gt;Cloud native architecture can have a lot of advantages, but can also be very complex to integrate and therefore must fulfill some requirements to work efficiently.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title> Index</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/</guid>
+      <description>title: &amp;ldquo;Kubernetes And Cloud Native Essentials (Lfs250)&amp;rdquo; description: &amp;ldquo;Posts about Kubernetes And Cloud Native Essentials (Lfs250)&amp;rdquo; Kubernetes And Cloud Native Essentials (Lfs250) This section contains posts related to Kubernetes And Cloud Native Essentials (Lfs250).</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;description-posts-about-kubernetes-and-cloud-native-essentials-lfs250&#34;&gt;title: &amp;ldquo;Kubernetes And Cloud Native Essentials (Lfs250)&amp;rdquo;
+description: &amp;ldquo;Posts about Kubernetes And Cloud Native Essentials (Lfs250)&amp;rdquo;&lt;/h2&gt;
+&lt;h1 id=&#34;kubernetes-and-cloud-native-essentials-lfs250&#34;&gt;Kubernetes And Cloud Native Essentials (Lfs250)&lt;/h1&gt;
+&lt;p&gt;This section contains posts related to Kubernetes And Cloud Native Essentials (Lfs250).&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title> Index</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/</guid>
+      <description>title: &amp;ldquo;Cloud Native Architecture&amp;rdquo; description: &amp;ldquo;Posts about Cloud Native Architecture&amp;rdquo; Cloud Native Architecture This section contains posts related to Cloud Native Architecture.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;description-posts-about-cloud-native-architecture&#34;&gt;title: &amp;ldquo;Cloud Native Architecture&amp;rdquo;
+description: &amp;ldquo;Posts about Cloud Native Architecture&amp;rdquo;&lt;/h2&gt;
+&lt;h1 id=&#34;cloud-native-architecture&#34;&gt;Cloud Native Architecture&lt;/h1&gt;
+&lt;p&gt;This section contains posts related to Cloud Native Architecture.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Autoscaling</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</guid>
+      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Autoscaling&amp;rdquo; date: 2025-04-30 Autoscaling The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
+categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;]
+title: &amp;ldquo;Autoscaling&amp;rdquo;
+date: 2025-04-30&lt;/h2&gt;
+&lt;h1 id=&#34;autoscaling&#34;&gt;Autoscaling&lt;/h1&gt;
+&lt;p&gt;The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.&lt;/p&gt;
+&lt;p&gt;Typically, when we talk about autoscaling we’re talking about &lt;em&gt;horizontal scaling&lt;/em&gt;, which describes the process of spawning new compute resources which can be new copies of your application process, virtual machines, or - in a less immediate way - even new racks of servers and other hardware.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Vertical scaling&lt;/em&gt; on the other hand describes the change in size of the underlying hardware, which only works within certain hardware limits for bare metal, but also for virtual machines. Virtual machines and processes can be easily scaled up by allowing them to consume more CPU and memory, the upper limit is defined by the compute and memory capacity of the underlying hardware. The hardware itself can be scaled up, for example, by adding more RAM, but only until all RAM slots are occupied.&lt;/p&gt;
+&lt;p&gt;To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That&amp;rsquo;s vertical scaling. You can also call your friends and ask them to help you and share the work. That&amp;rsquo;s horizontal scaling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;img src=&#34;https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/q2cr3c5d6279-Horizontalvsverticalscaling.png&#34; alt=&#34;Horizontal vs vertical scaling&#34;&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Horizontal vs vertical scaling&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Configuring autoscaling in various environments requires configuring a minimum and maximum limit of instances (virtual machines or containers) and a metric that triggers the scaling. In order to configure the correct scaling, you often need to run many (near-production) load tests and analyze the behavior and load balancing when your application is scaled.&lt;/p&gt;
+&lt;p&gt;Cloud environments which rely on usage based on-demand pricing models provide very effective platforms for automatic scaling, with the ability to provision a large amount of resources within seconds or even scale to zero, if resources are temporarily not needed.&lt;/p&gt;
+&lt;p&gt;Even if scaling your applications and the underlying infrastructure is not automated at first, the ability to scale your application can increase availability and resilience of your services in more traditional environments.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Course Intro</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/course-intro/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/course-intro/</guid>
+      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;] title: &amp;ldquo;Course Intro&amp;rdquo; date: 2025-04-30 Course Introduction If you’re new to the world of modern application development and deployment, this course will give you an overview of cloud native technologies and how container orchestration systems like Kubernetes can help to implement them.
+Kubernetes is a very popular open source platform for managing containerized workloads and quickly became a standard job requirement in the IT sector.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
+categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;]
+title: &amp;ldquo;Course Intro&amp;rdquo;
+date: 2025-04-30&lt;/h2&gt;
+&lt;h1 id=&#34;course-introduction&#34;&gt;Course Introduction&lt;/h1&gt;
+&lt;p&gt;If you’re new to the world of modern application development and deployment, this course will give you an overview of cloud native technologies and how container orchestration systems like Kubernetes can help to implement them.&lt;/p&gt;
+&lt;p&gt;Kubernetes is a very popular open source platform for managing containerized workloads and quickly became a standard job requirement in the IT sector. At the same time, the amount of information about platforms, frameworks and tools can be overwhelming, and finding the right direction is a time-consuming task. Kubernetes provides a framework that enables you to build an individual platform for your workload, and while “batteries are not included”, it can help solve the problems of scaling, load balancing, orchestration, self-healing and configuration management if configured properly.&lt;/p&gt;
+&lt;h1 id=&#34;course-learning-objectives&#34;&gt;Course Learning Objectives&lt;/h1&gt;
+&lt;p&gt;By the end of this course, you will learn the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Discuss the basics of cloud native technologies.
+- Understand the high level architecture of Kubernetes.
+- Deal with the challenges of container orchestration.
+- Discuss how container orchestration differs from legacy deployments.
+- Deliver and monitor your application in a distributed system.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;course-audience-and-requirements&#34;&gt;Course Audience and Requirements&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Audience&lt;/strong&gt; : This course is designed for existing and aspiring developers, administrators, architects and managers who are new to the world of cloud native technologies and container orchestration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Knowledge/Skills&lt;/strong&gt;:  The course has no hard requirements, but it is beneficial if you are familiar with the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic understanding of Linux systems&lt;/li&gt;
+&lt;li&gt;Simple command line usage&lt;/li&gt;
+&lt;li&gt;Basic understanding of what the cloud is&lt;/li&gt;
+&lt;li&gt;Basics of a programming language&lt;/li&gt;
+&lt;li&gt;Knowledge of networking concepts like TCP/IP or DNS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Index on Terminal</title>
+    <link>/posts/htb/</link>
+    <description>Recent content in  Index on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jun 2025 17:16:32 +0300</lastBuildDate><atom:link href="/posts/htb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sequel Machine</title>
+      <link>/posts/htb/sequel-machine/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
+      
+      <guid>/posts/htb/sequel-machine/</guid>
+      <description>title: Crocodile date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1 During our scan, which port do we find serving MySQL?
+![[Pasted image 20250606171949.png]]
+Task 2
+What community-developed MySQL version is the target running? ![[Pasted image 20250606172223.png]]
+Task 3
+When using the MySQL command line client, what switch do we need to use in order to specify a login username?
+![[Pasted image 20250606172601.png]] ![[Pasted image 20250606172607.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;categories-htb&#34;&gt;title: Crocodile
+date: 2025-06-06
+author: Nicos
+draft: false
+tags:
+section: &amp;ldquo;HTB&amp;rdquo;
+categories: [&amp;ldquo;HTB&amp;rdquo;]&lt;/h2&gt;
+&lt;h2 id=&#34;task-1&#34;&gt;Task 1&lt;/h2&gt;
+&lt;p&gt;During our scan, which port do we find serving MySQL?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606171949.png]]&lt;/p&gt;
+&lt;p&gt;Task 2&lt;/p&gt;
+&lt;p&gt;What community-developed MySQL version is the target running?
+![[Pasted image 20250606172223.png]]&lt;/p&gt;
+&lt;p&gt;Task 3&lt;/p&gt;
+&lt;p&gt;When using the MySQL command line client, what switch do we need to use in order to specify a login username?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606172601.png]]
+![[Pasted image 20250606172607.png]]&lt;/p&gt;
+&lt;p&gt;Task 4&lt;/p&gt;
+&lt;p&gt;Which username allows us to log into this MariaDB instance without providing a password?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606173057.png]]&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606173723.png]]&lt;/p&gt;
+&lt;p&gt;Task 5&lt;/p&gt;
+&lt;p&gt;In SQL, what symbol can we use to specify within the query that we want to display everything inside a table?
+![[Pasted image 20250606173225.png]]&lt;/p&gt;
+&lt;p&gt;Task 6&lt;/p&gt;
+&lt;p&gt;In SQL, what symbol do we need to end each query with?
+![[Pasted image 20250606173312.png]]&lt;/p&gt;
+&lt;p&gt;Task 7&lt;/p&gt;
+&lt;p&gt;There are three databases in this MySQL instance that are common across all MySQL instances. What is the name of the fourth that&amp;rsquo;s unique to this host?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606174838.png]]&lt;/p&gt;
+&lt;p&gt;Submit Flag&lt;/p&gt;
+&lt;p&gt;Submit root flag
+list the tables the get the contents of the table&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606175146.png]]
+![[Pasted image 20250606175047.png]]&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Crocodile</title>
+      <link>/posts/htb/crocodile/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:32 +0300</pubDate>
+      
+      <guid>/posts/htb/crocodile/</guid>
+      <description>title: Crocodile date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1
+What Nmap scanning switch employs the use of default scripts during a scan? ![[Pasted image 20250606180011.png]]
+Task 2 What service version is found to be running on port 21?
+![[Pasted image 20250606180041.png]]
+Task 3 What FTP code is returned to us for the &amp;ldquo;Anonymous FTP login allowed&amp;rdquo; message?
+![[Pasted image 20250606180154.png]]
+Task 4 After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously?</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;categories-htb&#34;&gt;title: Crocodile
+date: 2025-06-06
+author: Nicos
+draft: false
+tags:
+section: &amp;ldquo;HTB&amp;rdquo;
+categories: [&amp;ldquo;HTB&amp;rdquo;]&lt;/h2&gt;
+&lt;p&gt;Task 1&lt;/p&gt;
+&lt;p&gt;What Nmap scanning switch employs the use of default scripts during a scan?
+![[Pasted image 20250606180011.png]]&lt;/p&gt;
+&lt;p&gt;Task 2
+What service version is found to be running on port 21?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606180041.png]]&lt;/p&gt;
+&lt;p&gt;Task 3
+What FTP code is returned to us for the &amp;ldquo;Anonymous FTP login allowed&amp;rdquo; message?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606180154.png]]&lt;/p&gt;
+&lt;p&gt;Task 4
+After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously?
+![[Pasted image 20250606180708.png]]&lt;/p&gt;
+&lt;p&gt;Task 5
+After connecting to the FTP server anonymously, what command can we use to download the files we find on the FTP server?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606180934.png]]&lt;/p&gt;
+&lt;p&gt;Task 6
+What is one of the higher-privilege sounding usernames in &amp;lsquo;allowed.userlist&amp;rsquo; that we download from the FTP server?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606181046.png]]&lt;/p&gt;
+&lt;p&gt;Task 7
+What version of Apache HTTP Server is running on the target host?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606181423.png]]&lt;/p&gt;
+&lt;p&gt;Task 8
+What switch can we use with Gobuster to specify we are looking for specific filetypes?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606181856.png]]
+![[Pasted image 20250606181900.png]]&lt;/p&gt;
+&lt;p&gt;Task 9
+Which PHP file can we identify with directory brute force that will provide the opportunity to authenticate to the web service?
+![[Pasted image 20250606182143.png]]
+![[Pasted image 20250606182547.png]]&lt;/p&gt;
+&lt;p&gt;Submit Flag
+Submit root flag&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606183629.png]]
+![[Pasted image 20250606183554.png]]&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Responder</title>
+      <link>/posts/htb/responder/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:32 +0300</pubDate>
+      
+      <guid>/posts/htb/responder/</guid>
+      <description>title: Responder date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1
+When visiting the web service using the IP address, what is the domain that we are being redirected to?
+![[Pasted image 20250606184518.png]] ![[Pasted image 20250606184537.png]]
+Task 2 Which scripting language is being used on the server to generate webpages? ![[Pasted image 20250606184708.png]]
+Task 3 What is the name of the URL parameter which is used to load different language versions of the webpage?</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;categories-htb&#34;&gt;title: Responder
+date: 2025-06-06
+author: Nicos
+draft: false
+tags:
+section: &amp;ldquo;HTB&amp;rdquo;
+categories: [&amp;ldquo;HTB&amp;rdquo;]&lt;/h2&gt;
+&lt;p&gt;Task 1&lt;/p&gt;
+&lt;p&gt;When visiting the web service using the IP address, what is the domain that we are being redirected to?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606184518.png]]
+![[Pasted image 20250606184537.png]]&lt;/p&gt;
+&lt;p&gt;Task 2
+Which scripting language is being used on the server to generate webpages?
+![[Pasted image 20250606184708.png]]&lt;/p&gt;
+&lt;p&gt;Task 3
+What is the name of the URL parameter which is used to load different language versions of the webpage?&lt;/p&gt;
+&lt;p&gt;add the ip of target to /etc/hosts then map it to the domain name unika.htb&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606185713.png]]&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606185554.png]]&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

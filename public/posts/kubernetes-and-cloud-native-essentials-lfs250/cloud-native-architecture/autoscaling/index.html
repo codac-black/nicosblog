@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Autoscaling :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Autoscaling&amp;rdquo; date: 2025-04-30 Autoscaling The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down." />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.c4bbe9a7514d438a2e71e83e61d10030f7225459c1fecf5dbf7c83706d4877da.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Autoscaling">
+<meta property="og:description" content="section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Autoscaling&amp;rdquo; date: 2025-04-30 Autoscaling The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down." />
+<meta property="og:url" content="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+  <meta property="article:section" content="Kubernetes and Cloud Native Essentials (LFS250)" />
+
+  <meta property="article:section" content="Cloud Native Architecture" />
+
+
+  <meta property="article:published_time" content="2025-06-10 17:16:33 &#43;0300 EAT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container full">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/">Autoscaling</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-06-10</time></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <hr>
+<h2 id="date-2025-04-30">section: &ldquo;Kubernetes and Cloud Native Essentials (LFS250)&rdquo;
+categories: [&ldquo;Kubernetes and Cloud Native Essentials (LFS250)&rdquo;, &ldquo;Cloud Native Architecture&rdquo;]
+title: &ldquo;Autoscaling&rdquo;
+date: 2025-04-30</h2>
+<h1 id="autoscaling">Autoscaling<a href="#autoscaling" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.</p>
+<p>Typically, when we talk about autoscaling we’re talking about <em>horizontal scaling</em>, which describes the process of spawning new compute resources which can be new copies of your application process, virtual machines, or - in a less immediate way - even new racks of servers and other hardware.</p>
+<p><em>Vertical scaling</em> on the other hand describes the change in size of the underlying hardware, which only works within certain hardware limits for bare metal, but also for virtual machines. Virtual machines and processes can be easily scaled up by allowing them to consume more CPU and memory, the upper limit is defined by the compute and memory capacity of the underlying hardware. The hardware itself can be scaled up, for example, by adding more RAM, but only until all RAM slots are occupied.</p>
+<p>To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That&rsquo;s vertical scaling. You can also call your friends and ask them to help you and share the work. That&rsquo;s horizontal scaling.</p>
+<p><strong><img src="https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/q2cr3c5d6279-Horizontalvsverticalscaling.png" alt="Horizontal vs vertical scaling"></strong></p>
+<p><strong>Horizontal vs vertical scaling</strong></p>
+<p>Configuring autoscaling in various environments requires configuring a minimum and maximum limit of instances (virtual machines or containers) and a metric that triggers the scaling. In order to configure the correct scaling, you often need to run many (near-production) load tests and analyze the behavior and load balancing when your application is scaled.</p>
+<p>Cloud environments which rely on usage based on-demand pricing models provide very effective platforms for automatic scaling, with the ability to provision a large amount of resources within seconds or even scale to zero, if resources are temporarily not needed.</p>
+<p>Even if scaling your applications and the underlying infrastructure is not automated at first, the ability to scale your application can increase availability and resilience of your services in more traditional environments.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/" class="button inline prev">
+        Cloud Native Architecture
+      </a>
+    
+    
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

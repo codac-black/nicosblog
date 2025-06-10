@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Index on Terminal</title>
+    <link>/posts/picoctf/packet-analysis/</link>
+    <description>Recent content in  Index on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jun 2025 17:16:34 +0300</lastBuildDate><atom:link href="/posts/picoctf/packet-analysis/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

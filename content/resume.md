@@ -1,6 +1,6 @@
----
-title="resume"
----
++++
+title = "resume"
++++
 # Bruno Maisiba Bosire
 
 **Data Analyst | ML Engineer | Python & SQL Developer**

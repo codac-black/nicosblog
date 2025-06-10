@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PicoCTF on Terminal</title>
+    <link>/categories/picoctf/</link>
+    <description>Recent content in PicoCTF on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jun 2025 17:16:34 +0300</lastBuildDate><atom:link href="/categories/picoctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Index</title>
+      <link>/posts/picoctf/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      
+      <guid>/posts/picoctf/</guid>
+      <description>title: &amp;ldquo;Picoctf&amp;rdquo; description: &amp;ldquo;Posts about Picoctf&amp;rdquo; Picoctf This section contains posts related to Picoctf.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;description-posts-about-picoctf&#34;&gt;title: &amp;ldquo;Picoctf&amp;rdquo;
+description: &amp;ldquo;Posts about Picoctf&amp;rdquo;&lt;/h2&gt;
+&lt;h1 id=&#34;picoctf&#34;&gt;Picoctf&lt;/h1&gt;
+&lt;p&gt;This section contains posts related to Picoctf.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title> Index</title>
+      <link>/posts/picoctf/packet-analysis/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      
+      <guid>/posts/picoctf/packet-analysis/</guid>
+      <description>title: &amp;ldquo;Packet Analysis&amp;rdquo; description: &amp;ldquo;Posts about Packet Analysis&amp;rdquo; Packet Analysis This section contains posts related to Packet Analysis.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;description-posts-about-packet-analysis&#34;&gt;title: &amp;ldquo;Packet Analysis&amp;rdquo;
+description: &amp;ldquo;Posts about Packet Analysis&amp;rdquo;&lt;/h2&gt;
+&lt;h1 id=&#34;packet-analysis&#34;&gt;Packet Analysis&lt;/h1&gt;
+&lt;p&gt;This section contains posts related to Packet Analysis.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Index on Terminal</title>
+    <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/</link>
+    <description>Recent content in  Index on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jun 2025 17:16:33 +0300</lastBuildDate><atom:link href="/posts/kubernetes-and-cloud-native-essentials-lfs250/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Course Intro</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/course-intro/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/course-intro/</guid>
+      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;] title: &amp;ldquo;Course Intro&amp;rdquo; date: 2025-04-30 Course Introduction If you’re new to the world of modern application development and deployment, this course will give you an overview of cloud native technologies and how container orchestration systems like Kubernetes can help to implement them.
+Kubernetes is a very popular open source platform for managing containerized workloads and quickly became a standard job requirement in the IT sector.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
+categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;]
+title: &amp;ldquo;Course Intro&amp;rdquo;
+date: 2025-04-30&lt;/h2&gt;
+&lt;h1 id=&#34;course-introduction&#34;&gt;Course Introduction&lt;/h1&gt;
+&lt;p&gt;If you’re new to the world of modern application development and deployment, this course will give you an overview of cloud native technologies and how container orchestration systems like Kubernetes can help to implement them.&lt;/p&gt;
+&lt;p&gt;Kubernetes is a very popular open source platform for managing containerized workloads and quickly became a standard job requirement in the IT sector. At the same time, the amount of information about platforms, frameworks and tools can be overwhelming, and finding the right direction is a time-consuming task. Kubernetes provides a framework that enables you to build an individual platform for your workload, and while “batteries are not included”, it can help solve the problems of scaling, load balancing, orchestration, self-healing and configuration management if configured properly.&lt;/p&gt;
+&lt;h1 id=&#34;course-learning-objectives&#34;&gt;Course Learning Objectives&lt;/h1&gt;
+&lt;p&gt;By the end of this course, you will learn the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Discuss the basics of cloud native technologies.
+- Understand the high level architecture of Kubernetes.
+- Deal with the challenges of container orchestration.
+- Discuss how container orchestration differs from legacy deployments.
+- Deliver and monitor your application in a distributed system.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;course-audience-and-requirements&#34;&gt;Course Audience and Requirements&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Audience&lt;/strong&gt; : This course is designed for existing and aspiring developers, administrators, architects and managers who are new to the world of cloud native technologies and container orchestration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Knowledge/Skills&lt;/strong&gt;:  The course has no hard requirements, but it is beneficial if you are familiar with the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic understanding of Linux systems&lt;/li&gt;
+&lt;li&gt;Simple command line usage&lt;/li&gt;
+&lt;li&gt;Basic understanding of what the cloud is&lt;/li&gt;
+&lt;li&gt;Basics of a programming language&lt;/li&gt;
+&lt;li&gt;Knowledge of networking concepts like TCP/IP or DNS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

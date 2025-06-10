@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Cloud Native Architecture :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="title: Cloud Native Architecture date: 4-30-2025 author: Bruno draft: true tags: section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] In this chapter, you will learn about the principles of modern application architecture, often referred to as Cloud Native Architecture. We will discover what makes these applications native to cloud systems and how they differ from traditional approaches.
+Learning Objectives By the end of this chapter, you should be able to:" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.c4bbe9a7514d438a2e71e83e61d10030f7225459c1fecf5dbf7c83706d4877da.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cloud Native Architecture">
+<meta property="og:description" content="title: Cloud Native Architecture date: 4-30-2025 author: Bruno draft: true tags: section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] In this chapter, you will learn about the principles of modern application architecture, often referred to as Cloud Native Architecture. We will discover what makes these applications native to cloud systems and how they differ from traditional approaches.
+Learning Objectives By the end of this chapter, you should be able to:" />
+<meta property="og:url" content="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+  <meta property="article:section" content="Kubernetes and Cloud Native Essentials (LFS250)" />
+
+  <meta property="article:section" content="Cloud Native Architecture" />
+
+
+  <meta property="article:published_time" content="2025-06-10 17:16:34 &#43;0300 EAT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container full">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/">Cloud Native Architecture</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-06-10</time></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <hr>
+<h2 id="categories-kubernetes-and-cloud-native-essentials-lfs250-cloud-native-architecture">title: Cloud Native Architecture
+date: 4-30-2025
+author: Bruno
+draft: true
+tags:
+section: &ldquo;Kubernetes and Cloud Native Essentials (LFS250)&rdquo;
+categories: [&ldquo;Kubernetes and Cloud Native Essentials (LFS250)&rdquo;, &ldquo;Cloud Native Architecture&rdquo;]</h2>
+<p>In this chapter, you will learn about the principles of modern application architecture, often referred to as Cloud Native Architecture. We will discover what makes these applications <em>native</em> to cloud systems and how they differ from traditional approaches.</p>
+<h1 id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>Discuss the characteristics of Cloud Native Architecture</li>
+<li>Explain the benefits of autoscaling and serverless patterns</li>
+<li>Understand the importance of open standards and community projects in cloud native environments</li>
+</ul>
+<h1 id="cloud-native-architecture-fundamentals">Cloud Native Architecture Fundamentals<a href="#cloud-native-architecture-fundamentals" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>At the core, the idea of cloud native architecture is to optimize your software for cost efficiency, reliability and faster time-to-market by using a combination of cultural, technological and architectural design patterns.</p>
+<p>The term <em>cloud native</em> can be found in various definitions, some of which have a focus on technologies, while others may focus on the cultural side of things.</p>
+<p>The <a href="https://github.com/cncf/toc/blob/main/DEFINITION.md">Cloud Native Computing Foundation defines it</a> as following:</p>
+<p><em>“Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.</em></p>
+<p><em>These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.</em> <em>[&hellip;]”</em></p>
+<p>Traditional or legacy applications are usually designed with a monolithic approach in mind, meaning that they are self-contained and include all the functionality and components that are needed to fulfill a task. A monolithic application usually has a single code base and is provided as a single binary file that can run on a server.</p>
+<p>If you think of E-Commerce software for an online shop, a monolithic application would include every functionality from the graphical user interface, listing products, shopping cart, checkout, processing orders, and much more.</p>
+<p>While it can be very easy to develop and deploy an application in this format, it can be equally difficult to manage complexity, scale development across multiple teams, implement changes fast, and be able to scale the application out efficiently when it comes under a lot of load.</p>
+<p>Cloud native architecture can provide solutions for the increasing complexity of applications and the growing demand by users. The basic idea is to break down your application in smaller pieces which makes them more manageable. Instead of providing all functionality in a single application, you have multiple decoupled applications that communicate with each other in a network. If we stick to the example from before, you could have an app for your user interface, your checkout and everything else. These small, independent applications with a clearly defined scope of functions are often referred to as <em>microservices</em>.</p>
+<p>That makes it possible to have multiple teams, each holding ownership of different functions of your application, but also operate and scale them individually. For example, if a lot of people try to buy products, you’re able to scale services that have a lot of load like the shopping cart and checkout.</p>
+<p><strong><img src="https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/ch9ud860v954-Monolithicvsmicroservices.png" alt="Monolithic vs Microservices Architecture"></strong></p>
+<p>**Monolithic vs Microservices Architecture<br>
+**</p>
+<p>Cloud native architecture can have a lot of advantages, but can also be very complex to integrate and therefore must fulfill some requirements to work efficiently.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/characteristics-of-cloud-native-architecture/" class="button inline prev">
+        Characteristics Of Cloud Native Architecture
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/" class="button inline next">
+        Autoscaling
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
