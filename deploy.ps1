@@ -37,6 +37,7 @@ if (-not (Test-Path $destinationPath)) {
 
 # Create category directories if they don't exist
 $categories = @(
+    'cyber-shujaa',
     'ctf/picoctf',
     'ctf/htb',
     'ctf/ms-ctf',

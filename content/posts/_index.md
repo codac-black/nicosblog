@@ -10,6 +10,13 @@ Welcome to my blog! Here you'll find articles about cybersecurity, programming, 
 
 ## Categories
 
+### [Cyber Shujaa](/posts/cyber-shujaa)
+My journey through the Cyber Shujaa program:
+- Training materials
+- Challenges
+- Achievements
+- Program insights
+
 ### [CTF Writeups](/posts/ctf)
 Capture The Flag challenges and solutions, including:
 - PicoCTF
