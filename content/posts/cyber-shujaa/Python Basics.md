@@ -1,6 +1,6 @@
 ---
 title: "Python Basics"
-date: 2025-06-11T12:32:27+03:00
+date: 2025-06-11T12:52:08+03:00
 section: "cyber-shujaa"
 categories: ["cyber-shujaa"]
 ---

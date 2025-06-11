@@ -1,6 +1,6 @@
 ---
 title: "Picoctf Forensics"
-date: 2025-06-11T12:32:25+03:00
+date: 2025-06-11T12:52:06+03:00
 ---
 ---
 title: Verify

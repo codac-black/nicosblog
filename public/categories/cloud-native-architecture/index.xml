@@ -6,11 +6,36 @@
     <description>Recent content in Cloud Native Architecture on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Jun 2025 12:32:30 +0300</lastBuildDate><atom:link href="/categories/cloud-native-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jun 2025 12:52:08 +0300</lastBuildDate><atom:link href="/categories/cloud-native-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autoscaling</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</guid>
+      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Autoscaling&amp;rdquo; date: 2025-04-30 Autoscaling The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
+categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;]
+title: &amp;ldquo;Autoscaling&amp;rdquo;
+date: 2025-04-30&lt;/h2&gt;
+&lt;h1 id=&#34;autoscaling&#34;&gt;Autoscaling&lt;/h1&gt;
+&lt;p&gt;The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.&lt;/p&gt;
+&lt;p&gt;Typically, when we talk about autoscaling we’re talking about &lt;em&gt;horizontal scaling&lt;/em&gt;, which describes the process of spawning new compute resources which can be new copies of your application process, virtual machines, or - in a less immediate way - even new racks of servers and other hardware.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Vertical scaling&lt;/em&gt; on the other hand describes the change in size of the underlying hardware, which only works within certain hardware limits for bare metal, but also for virtual machines. Virtual machines and processes can be easily scaled up by allowing them to consume more CPU and memory, the upper limit is defined by the compute and memory capacity of the underlying hardware. The hardware itself can be scaled up, for example, by adding more RAM, but only until all RAM slots are occupied.&lt;/p&gt;
+&lt;p&gt;To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That&amp;rsquo;s vertical scaling. You can also call your friends and ask them to help you and share the work. That&amp;rsquo;s horizontal scaling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;img src=&#34;https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/q2cr3c5d6279-Horizontalvsverticalscaling.png&#34; alt=&#34;Horizontal vs vertical scaling&#34;&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Horizontal vs vertical scaling&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Configuring autoscaling in various environments requires configuring a minimum and maximum limit of instances (virtual machines or containers) and a metric that triggers the scaling. In order to configure the correct scaling, you often need to run many (near-production) load tests and analyze the behavior and load balancing when your application is scaled.&lt;/p&gt;
+&lt;p&gt;Cloud environments which rely on usage based on-demand pricing models provide very effective platforms for automatic scaling, with the ability to provision a large amount of resources within seconds or even scale to zero, if resources are temporarily not needed.&lt;/p&gt;
+&lt;p&gt;Even if scaling your applications and the underlying infrastructure is not automated at first, the ability to scale your application can increase availability and resilience of your services in more traditional environments.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Characteristics Of Cloud Native Architecture</title>
       <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/characteristics-of-cloud-native-architecture/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:30 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
       
       <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/characteristics-of-cloud-native-architecture/</guid>
       <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Characteristics Of Cloud Native Architecture&amp;rdquo; date: 2025-04-30 Characteristics of Cloud Native Architecture Cloud Native Architecture Characteristics:
@@ -57,7 +82,7 @@ date: 2025-04-30&lt;/h2&gt;
     <item>
       <title>Cloud Native Architecture</title>
       <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:30 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
       
       <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/</guid>
       <description>title: Cloud Native Architecture date: 4-30-2025 author: Bruno draft: true tags: section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] In this chapter, you will learn about the principles of modern application architecture, often referred to as Cloud Native Architecture. We will discover what makes these applications native to cloud systems and how they differ from traditional approaches.
@@ -93,31 +118,6 @@ categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdqu
 &lt;p&gt;**Monolithic vs Microservices Architecture&lt;br&gt;
 **&lt;/p&gt;
 &lt;p&gt;Cloud native architecture can have a lot of advantages, but can also be very complex to integrate and therefore must fulfill some requirements to work efficiently.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Autoscaling</title>
-      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:29 +0300</pubDate>
-      
-      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</guid>
-      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Autoscaling&amp;rdquo; date: 2025-04-30 Autoscaling The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.</description>
-      <content>&lt;hr&gt;
-&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
-categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;]
-title: &amp;ldquo;Autoscaling&amp;rdquo;
-date: 2025-04-30&lt;/h2&gt;
-&lt;h1 id=&#34;autoscaling&#34;&gt;Autoscaling&lt;/h1&gt;
-&lt;p&gt;The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.&lt;/p&gt;
-&lt;p&gt;Typically, when we talk about autoscaling we’re talking about &lt;em&gt;horizontal scaling&lt;/em&gt;, which describes the process of spawning new compute resources which can be new copies of your application process, virtual machines, or - in a less immediate way - even new racks of servers and other hardware.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Vertical scaling&lt;/em&gt; on the other hand describes the change in size of the underlying hardware, which only works within certain hardware limits for bare metal, but also for virtual machines. Virtual machines and processes can be easily scaled up by allowing them to consume more CPU and memory, the upper limit is defined by the compute and memory capacity of the underlying hardware. The hardware itself can be scaled up, for example, by adding more RAM, but only until all RAM slots are occupied.&lt;/p&gt;
-&lt;p&gt;To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That&amp;rsquo;s vertical scaling. You can also call your friends and ask them to help you and share the work. That&amp;rsquo;s horizontal scaling.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;img src=&#34;https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/q2cr3c5d6279-Horizontalvsverticalscaling.png&#34; alt=&#34;Horizontal vs vertical scaling&#34;&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Horizontal vs vertical scaling&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Configuring autoscaling in various environments requires configuring a minimum and maximum limit of instances (virtual machines or containers) and a metric that triggers the scaling. In order to configure the correct scaling, you often need to run many (near-production) load tests and analyze the behavior and load balancing when your application is scaled.&lt;/p&gt;
-&lt;p&gt;Cloud environments which rely on usage based on-demand pricing models provide very effective platforms for automatic scaling, with the ability to provision a large amount of resources within seconds or even scale to zero, if resources are temporarily not needed.&lt;/p&gt;
-&lt;p&gt;Even if scaling your applications and the underlying infrastructure is not automated at first, the ability to scale your application can increase availability and resilience of your services in more traditional environments.&lt;/p&gt;
 </content>
     </item>
     

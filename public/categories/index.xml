@@ -6,11 +6,41 @@
     <description>Recent content in Categories on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Jun 2025 12:32:30 +0300</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jun 2025 12:52:09 +0300</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>/categories/docker/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:09 +0300</pubDate>
+      
+      <guid>/categories/docker/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>/categories/security/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:09 +0300</pubDate>
+      
+      <guid>/categories/security/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>tutorials</title>
+      <link>/categories/tutorials/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:09 +0300</pubDate>
+      
+      <guid>/categories/tutorials/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>Cloud Native Architecture</title>
       <link>/categories/cloud-native-architecture/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:30 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
       
       <guid>/categories/cloud-native-architecture/</guid>
       <description></description>
@@ -18,9 +48,29 @@
     </item>
     
     <item>
+      <title>cyber-shujaa</title>
+      <link>/categories/cyber-shujaa/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
+      
+      <guid>/categories/cyber-shujaa/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>HTB</title>
+      <link>/categories/htb/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
+      
+      <guid>/categories/htb/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
       <title>Kubernetes and Cloud Native Essentials (LFS250)</title>
       <link>/categories/kubernetes-and-cloud-native-essentials-lfs250/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:30 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
       
       <guid>/categories/kubernetes-and-cloud-native-essentials-lfs250/</guid>
       <description></description>
@@ -30,7 +80,7 @@
     <item>
       <title>ms ctf</title>
       <link>/categories/ms-ctf/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:30 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:52:08 +0300</pubDate>
       
       <guid>/categories/ms-ctf/</guid>
       <description></description>
@@ -38,21 +88,21 @@
     </item>
     
     <item>
-      <title>HTB</title>
-      <link>/categories/htb/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:29 +0300</pubDate>
+      <title>ctf</title>
+      <link>/categories/ctf/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:06 +0300</pubDate>
       
-      <guid>/categories/htb/</guid>
+      <guid>/categories/ctf/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
-      <title>cyber-shujaa</title>
-      <link>/categories/cyber-shujaa/</link>
-      <pubDate>Wed, 11 Jun 2025 12:32:28 +0300</pubDate>
+      <title>picoctf</title>
+      <link>/categories/picoctf/</link>
+      <pubDate>Wed, 11 Jun 2025 12:52:06 +0300</pubDate>
       
-      <guid>/categories/cyber-shujaa/</guid>
+      <guid>/categories/picoctf/</guid>
       <description></description>
       <content></content>
     </item>

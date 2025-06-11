@@ -35,8 +35,27 @@ if (-not (Test-Path $destinationPath)) {
     exit 1
 }
 
-# Use Robocopy to mirror the directories while preserving structure
-$robocopyOptions = @('/MIR', '/Z', '/W:5', '/R:3', '/E')  # Added /E to copy subdirectories
+# Create category directories if they don't exist
+$categories = @(
+    'ctf/picoctf',
+    'ctf/htb',
+    'ctf/ms-ctf',
+    'tutorials/docker',
+    'tutorials/kubernetes',
+    'tutorials/security-tools',
+    'security'
+)
+
+foreach ($category in $categories) {
+    $categoryPath = Join-Path $destinationPath $category
+    if (-not (Test-Path $categoryPath)) {
+        New-Item -ItemType Directory -Path $categoryPath -Force | Out-Null
+        Write-Host "Created category directory: $category"
+    }
+}
+
+# Use Robocopy to copy files without mirroring (preserve destination structure)
+$robocopyOptions = @('/Z', '/W:5', '/R:3', '/E')  # Removed /MIR to preserve destination structure
 $robocopyResult = robocopy $sourcePath $destinationPath @robocopyOptions
 
 if ($LASTEXITCODE -ge 8) {
@@ -51,7 +70,7 @@ Write-Host "Processing front matter for proper sectioning..."
 python .\frontmatter.py "$destinationPath"
 
 Write-Host "Creating section index files..."
-# Get all subdirectories in posts (recursive search)
+# Get all subdirectories in posts
 $postDirs = Get-ChildItem -Path $destinationPath -Directory -Recurse
 
 foreach ($dir in $postDirs) {

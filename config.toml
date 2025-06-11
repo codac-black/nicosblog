@@ -5,7 +5,7 @@ paginate = 5
 
 # Enable section-based URLs
 [permalinks]
-  posts = "/:section/:slug/"
+  posts = "/posts/:slug/"
 
 # Enable taxonomies for better organization
 [taxonomies]
