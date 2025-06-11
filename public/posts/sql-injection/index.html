@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   
-    <title>SQL Injection 💉 :: Terminal</title>
+    <title>Sql Injection :: Terminal</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1. What is SQL? SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.
+<meta name="description" content="title: SQL Injection 💉 date: 2024-12-09 draft: false tags: 1. What is SQL? SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.
 Example SQL table containing employee data; the name of the table is &amp;rsquo;employees&#39;:
-userid first_name last_name department salary($) auth_tan 32147 Paulina Traves Accounting 46.000 P45JSI 89762 Tobi Barnett Development 77.000 TA9LL1 96134 Bob Franco Marketing 83.700 LO9S2V 34477 Abraham Holman Development 50." />
+userid first_name last_name department salary($) auth_tan 32147 Paulina Traves Accounting 46.000 P45JSI 89762 Tobi Barnett Development 77." />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
@@ -82,10 +82,10 @@ userid first_name last_name department salary($) auth_tan 32147 Paulina Traves A
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="SQL Injection 💉">
-<meta property="og:description" content="1. What is SQL? SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.
+<meta property="og:title" content="Sql Injection">
+<meta property="og:description" content="title: SQL Injection 💉 date: 2024-12-09 draft: false tags: 1. What is SQL? SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.
 Example SQL table containing employee data; the name of the table is &amp;rsquo;employees&#39;:
-userid first_name last_name department salary($) auth_tan 32147 Paulina Traves Accounting 46.000 P45JSI 89762 Tobi Barnett Development 77.000 TA9LL1 96134 Bob Franco Marketing 83.700 LO9S2V 34477 Abraham Holman Development 50." />
+userid first_name last_name department salary($) auth_tan 32147 Paulina Traves Accounting 46.000 P45JSI 89762 Tobi Barnett Development 77." />
 <meta property="og:url" content="/posts/sql-injection/" />
 <meta property="og:site_name" content="Terminal" />
 
@@ -95,7 +95,7 @@ userid first_name last_name department salary($) auth_tan 32147 Paulina Traves A
 <meta property="og:image:height" content="627">
 
 
-  <meta property="article:published_time" content="2024-12-09 00:00:00 &#43;0000 UTC" />
+  <meta property="article:published_time" content="2025-06-11 12:01:02 &#43;0300 EAT" />
 
 
 
@@ -170,20 +170,19 @@ userid first_name last_name department salary($) auth_tan 32147 Paulina Traves A
 
   <div class="content">
     
-<article class="post">
-  <h1 class="post-title">
-    <a href="/posts/sql-injection/">SQL Injection 💉</a>
-  </h1>
-  <div class="post-meta"><time class="post-date">2024-12-09</time></div>
-
-  
-  
-
-
-  
-
-  <div class="post-content"><div>
-        <h1 id="1-what-is-sql">1. What is SQL?<a href="#1-what-is-sql" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<main class="main">
+    <article class="post-single">
+        <header class="post-header">
+            <h1 class="post-title">Sql Injection</h1>
+             
+        </header>
+        <div class="post-content">
+            <hr>
+<h2 id="tags">title: SQL Injection 💉
+date: 2024-12-09
+draft: false
+tags:</h2>
+<h1 id="1-what-is-sql">1. What is SQL?</h1>
 <p>SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.</p>
 <p>Example SQL table containing employee data; the name of the table is &rsquo;employees':</p>
 <table>
@@ -255,11 +254,11 @@ userid first_name last_name department salary($) auth_tan 32147 Paulina Traves A
 </li>
 </ul>
 <p>Each of these command types can be used by attackers to compromise the confidentiality, integrity, and/or availability of a system. Proceed with the lesson to learn more about the SQL command types and how they relate to protections goals.</p>
-<h3 id="it-is-your-turn">It is your turn!<a href="#it-is-your-turn" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h3 id="it-is-your-turn">It is your turn!</h3>
 <p>Look at the example table. Try to retrieve the department of the employee Bob Franco. Note that you have been granted full administrator privileges in this assignment and can access all data without authentication.</p>
-<h3 id="solution">Solution<a href="#solution" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h3 id="solution">Solution</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> department <span style="color:#66d9ef">FROM</span> employees <span style="color:#66d9ef">WHERE</span> first_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bob&#39;</span> <span style="color:#66d9ef">AND</span> last_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Franco&#39;</span>;
-</span></span></code></pre></div><h1 id="2-data-manipulation-language-dml">2. Data Manipulation Language (DML)<a href="#2-data-manipulation-language-dml" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+</span></span></code></pre></div><h1 id="2-data-manipulation-language-dml">2. Data Manipulation Language (DML)</h1>
 <p>As implied by the name, data manipulation language deals with the manipulation of data. Many of the most common SQL statements, including SELECT, INSERT, UPDATE, and DELETE, may be categorized as DML statements. DML statements may be used for requesting records (SELECT), adding records (INSERT), deleting records (DELETE), and modifying existing records (UPDATE).</p>
 <p>If an attacker succeeds in &ldquo;injecting&rdquo; DML statements into a SQL database, he can violate the confidentiality (using SELECT statements), integrity (using UPDATE statements), and availability (using DELETE or UPDATE statements) of a system.</p>
 <ul>
@@ -290,14 +289,14 @@ userid first_name last_name department salary($) auth_tan 32147 Paulina Traves A
 </span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">WHERE</span> userid <span style="color:#f92672">=</span> <span style="color:#ae81ff">96134</span>;
 </span></span></code></pre></div><pre><code>- This statement retrieves the phone number of the employee who has the userid 96134.
 </code></pre>
-<h3 id="it-is-your-turn-1">It is your turn!<a href="#it-is-your-turn-1" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h3 id="it-is-your-turn-1">It is your turn!</h3>
 <p>Try to change the department of Tobi Barnett to &lsquo;Sales&rsquo;. Note that you have been granted full administrator privileges in this assignment and can access all data without authentication.</p>
-<h3 id="solution-1">solution<a href="#solution-1" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h3 id="solution-1">solution</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- UPDATING TOBI DEPARTMENT RECORD
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">UPDATE</span> employees
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> department <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Sales&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> first_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Tobi&#39;</span> <span style="color:#66d9ef">AND</span> last_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Barnett&#39;</span>;
-</span></span></code></pre></div><h1 id="4-data-definition-language-ddl">4. Data Definition Language (DDL)<a href="#4-data-definition-language-ddl" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+</span></span></code></pre></div><h1 id="4-data-definition-language-ddl">4. Data Definition Language (DDL)</h1>
 <p>Data definition language includes commands for defining data structures. DDL commands are commonly used to define a database’s schema. The schema refers to the overall structure or organization of the database and. in SQL databases, includes objects such as tables, indexes, views, relationships, triggers, and more.</p>
 <p>If an attacker successfully &ldquo;injects&rdquo; DDL type SQL commands into a database, he can violate the integrity (using ALTER and DROP statements) and availability (using DROP statements) of a system.</p>
 <ul>
@@ -328,13 +327,13 @@ userid first_name last_name department salary($) auth_tan 32147 Paulina Traves A
 </span></span></code></pre></div><pre><code>- This statement creates the employees example table given on page 2.
 </code></pre>
 <p>Now try to modify the schema by adding the column &ldquo;phone&rdquo; (varchar(20)) to the table &ldquo;employees&rdquo;. :</p>
-<h3 id="solution-2">Solution<a href="#solution-2" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h3 id="solution-2">Solution</h3>
 <p>syntax for altering table is</p>
 <pre tabindex="0"><code>ALTER TABLE table_name
 ADD column_you_want_to_add datatype
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> employees
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">ADD</span> phone varchar(<span style="color:#ae81ff">20</span>);
-</span></span></code></pre></div><h1 id="5-data-control-language-dcl">5. Data Control Language (DCL)<a href="#5-data-control-language-dcl" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+</span></span></code></pre></div><h1 id="5-data-control-language-dcl">5. Data Control Language (DCL)</h1>
 <p>Data control language is used to implement access control logic in a database. DCL can be used to revoke and grant user privileges on database objects such as tables, views, and functions.</p>
 <p>If an attacker successfully &ldquo;injects&rdquo; DCL type SQL commands into a database, he can violate the confidentiality (using GRANT commands) and availability (using REVOKE commands) of a system. For example, the attacker could grant himself admin privileges on the database or revoke the privileges of the true administrator.</p>
 <ul>
@@ -350,40 +349,12 @@ ADD column_you_want_to_add datatype
 </ul>
 <p>Try to grant rights to the table ==<code>grant_rights</code>== to user ==<code>unauthorized_user</code>==:</p>
 <pre tabindex="0"><code></code></pre>
-      </div></div>
-
-  
-    
-<div class="pagination">
-  <div class="pagination__title">
-    <span class="pagination__title-h">Read other posts</span>
-    <hr />
-  </div>
-  <div class="pagination__buttons">
-    
-      <a href="/posts/picoctf-forensics/" class="button inline prev">
-        Verify
-      </a>
-    
-    
-      ::
-    
-    
-      <a href="/posts/docker-setup/" class="button inline next">
-        Docker setup 🐳
-      </a>
-    
-  </div>
-</div>
-
-
-  
-
-  
-    
-
-  
-</article>
+        </div>
+        <footer class="post-footer">
+             
+        </footer>
+    </article>
+</main>
 
   </div>
 

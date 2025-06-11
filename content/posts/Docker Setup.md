@@ -1,4 +1,8 @@
 ---
+title: "Docker Setup"
+date: 2025-06-11T12:01:02+03:00
+---
+---
 title: Docker setup 🐳
 date: 2024-05-06T12:43:45+03:00
 author: Nicos

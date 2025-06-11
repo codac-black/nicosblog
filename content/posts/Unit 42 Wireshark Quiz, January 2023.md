@@ -1,4 +1,8 @@
 ---
+title: "Unit 42 Wireshark Quiz, January 2023"
+date: 2025-06-11T12:01:02+03:00
+---
+---
 title: Wireshark Malware Analysis
 date: 2025-02-7
 author: Nicos

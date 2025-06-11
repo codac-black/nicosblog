@@ -6,11 +6,14 @@ draft: false
 
 # Welcome to My Portfolio
 
-I'm Bruno Bosire, a cybersecurity professional and software developer. This site showcases my work, projects, and thoughts on technology and security.
+I'm Bruno Bosire, a cybersecurity enthusiast and data analyst. This site showcases my work, projects, and thoughts on technology and security.
 
-## Recent Posts
+## Quick Links
 
-Check out my latest blog posts below, or explore my [projects](/projects) and [resume](/resume).
+- [View My Projects](/projects)
+- [Read My Blog](/posts)
+- [Check My Resume](/resume)
+- [About Me](/about)
 
 <style>
 @keyframes fadeInUp {

@@ -1,6 +1,6 @@
 ---
 title: "Union Sql Injection"
-date: 2025-06-10T17:16:34+03:00
+date: 2025-06-11T12:01:02+03:00
 section: "ms ctf"
 categories: ["ms ctf"]
 ---

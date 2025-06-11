@@ -1,10 +1,4 @@
 ---
-title: " Index"
-date: 2025-06-10T17:16:33+03:00
-section: "Kubernetes and Cloud Native Essentials (LFS250)"
-categories: ["Kubernetes and Cloud Native Essentials (LFS250)"]
----
----
 title: "Kubernetes And Cloud Native Essentials (Lfs250)"
 description: "Posts about Kubernetes And Cloud Native Essentials (Lfs250)"
 ---

@@ -8,9 +8,34 @@
     <language>en</language>
     <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Autoscaling</title>
+      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</link>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
+      
+      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</guid>
+      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Autoscaling&amp;rdquo; date: 2025-04-30 Autoscaling The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
+categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;]
+title: &amp;ldquo;Autoscaling&amp;rdquo;
+date: 2025-04-30&lt;/h2&gt;
+&lt;h1 id=&#34;autoscaling&#34;&gt;Autoscaling&lt;/h1&gt;
+&lt;p&gt;The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.&lt;/p&gt;
+&lt;p&gt;Typically, when we talk about autoscaling we’re talking about &lt;em&gt;horizontal scaling&lt;/em&gt;, which describes the process of spawning new compute resources which can be new copies of your application process, virtual machines, or - in a less immediate way - even new racks of servers and other hardware.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Vertical scaling&lt;/em&gt; on the other hand describes the change in size of the underlying hardware, which only works within certain hardware limits for bare metal, but also for virtual machines. Virtual machines and processes can be easily scaled up by allowing them to consume more CPU and memory, the upper limit is defined by the compute and memory capacity of the underlying hardware. The hardware itself can be scaled up, for example, by adding more RAM, but only until all RAM slots are occupied.&lt;/p&gt;
+&lt;p&gt;To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That&amp;rsquo;s vertical scaling. You can also call your friends and ask them to help you and share the work. That&amp;rsquo;s horizontal scaling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;img src=&#34;https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/q2cr3c5d6279-Horizontalvsverticalscaling.png&#34; alt=&#34;Horizontal vs vertical scaling&#34;&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Horizontal vs vertical scaling&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Configuring autoscaling in various environments requires configuring a minimum and maximum limit of instances (virtual machines or containers) and a metric that triggers the scaling. In order to configure the correct scaling, you often need to run many (near-production) load tests and analyze the behavior and load balancing when your application is scaled.&lt;/p&gt;
+&lt;p&gt;Cloud environments which rely on usage based on-demand pricing models provide very effective platforms for automatic scaling, with the ability to provision a large amount of resources within seconds or even scale to zero, if resources are temporarily not needed.&lt;/p&gt;
+&lt;p&gt;Even if scaling your applications and the underlying infrastructure is not automated at first, the ability to scale your application can increase availability and resilience of your services in more traditional environments.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>Characteristics Of Cloud Native Architecture</title>
       <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/characteristics-of-cloud-native-architecture/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/characteristics-of-cloud-native-architecture/</guid>
       <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Characteristics Of Cloud Native Architecture&amp;rdquo; date: 2025-04-30 Characteristics of Cloud Native Architecture Cloud Native Architecture Characteristics:
@@ -57,7 +82,7 @@ date: 2025-04-30&lt;/h2&gt;
     <item>
       <title>Cloud Native Architecture</title>
       <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/cloud-native-architecture/</guid>
       <description>title: Cloud Native Architecture date: 4-30-2025 author: Bruno draft: true tags: section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] In this chapter, you will learn about the principles of modern application architecture, often referred to as Cloud Native Architecture. We will discover what makes these applications native to cloud systems and how they differ from traditional approaches.
@@ -97,58 +122,9 @@ categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdqu
     </item>
     
     <item>
-      <title>Union Sql Injection</title>
-      <link>/posts/ms-ctf/union-sql-injection/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
-      
-      <guid>/posts/ms-ctf/union-sql-injection/</guid>
-      <description> section: &amp;ldquo;ms ctf&amp;rdquo; categories: [&amp;ldquo;ms ctf&amp;rdquo;] title: &amp;ldquo;Union Sql Injection&amp;rdquo; date: 2025-05-21 ![[Pasted image 20250521130606.png]]
-the solution ![[Pasted image 20250521130644.png]]
-the query run was
-&amp;#39; UNION SELECT 1, &amp;#39;bob&amp;#39;, &amp;#39;5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8&amp;#39;, &amp;#39;&amp;#39;-- password: password </description>
-      <content>&lt;hr&gt;
-&lt;h2 id=&#34;date-2025-05-21&#34;&gt;section: &amp;ldquo;ms ctf&amp;rdquo;
-categories: [&amp;ldquo;ms ctf&amp;rdquo;]
-title: &amp;ldquo;Union Sql Injection&amp;rdquo;
-date: 2025-05-21&lt;/h2&gt;
-&lt;p&gt;![[Pasted image 20250521130606.png]]&lt;/p&gt;
-&lt;p&gt;the solution
-![[Pasted image 20250521130644.png]]&lt;/p&gt;
-&lt;p&gt;the query run was&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; UNION SELECT 1, &amp;#39;&lt;/span&gt;bob&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;, &amp;#39;&amp;#39;--
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;password: password
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
-    </item>
-    
-    <item>
-      <title>Autoscaling</title>
-      <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
-      
-      <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/cloud-native-architecture/autoscaling/</guid>
-      <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;] title: &amp;ldquo;Autoscaling&amp;rdquo; date: 2025-04-30 Autoscaling The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.</description>
-      <content>&lt;hr&gt;
-&lt;h2 id=&#34;date-2025-04-30&#34;&gt;section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;
-categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;, &amp;ldquo;Cloud Native Architecture&amp;rdquo;]
-title: &amp;ldquo;Autoscaling&amp;rdquo;
-date: 2025-04-30&lt;/h2&gt;
-&lt;h1 id=&#34;autoscaling&#34;&gt;Autoscaling&lt;/h1&gt;
-&lt;p&gt;The autoscaling pattern describes the dynamic adjustment of resources based on the current demand. CPU and memory are the obvious metrics to decide on when to scale applications as load increases or decreases, but other methods based on time or business metrics can also be considered to scale your services up or down.&lt;/p&gt;
-&lt;p&gt;Typically, when we talk about autoscaling we’re talking about &lt;em&gt;horizontal scaling&lt;/em&gt;, which describes the process of spawning new compute resources which can be new copies of your application process, virtual machines, or - in a less immediate way - even new racks of servers and other hardware.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Vertical scaling&lt;/em&gt; on the other hand describes the change in size of the underlying hardware, which only works within certain hardware limits for bare metal, but also for virtual machines. Virtual machines and processes can be easily scaled up by allowing them to consume more CPU and memory, the upper limit is defined by the compute and memory capacity of the underlying hardware. The hardware itself can be scaled up, for example, by adding more RAM, but only until all RAM slots are occupied.&lt;/p&gt;
-&lt;p&gt;To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That&amp;rsquo;s vertical scaling. You can also call your friends and ask them to help you and share the work. That&amp;rsquo;s horizontal scaling.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;img src=&#34;https://d36ai2hkxl16us.cloudfront.net/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/q2cr3c5d6279-Horizontalvsverticalscaling.png&#34; alt=&#34;Horizontal vs vertical scaling&#34;&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Horizontal vs vertical scaling&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Configuring autoscaling in various environments requires configuring a minimum and maximum limit of instances (virtual machines or containers) and a metric that triggers the scaling. In order to configure the correct scaling, you often need to run many (near-production) load tests and analyze the behavior and load balancing when your application is scaled.&lt;/p&gt;
-&lt;p&gt;Cloud environments which rely on usage based on-demand pricing models provide very effective platforms for automatic scaling, with the ability to provision a large amount of resources within seconds or even scale to zero, if resources are temporarily not needed.&lt;/p&gt;
-&lt;p&gt;Even if scaling your applications and the underlying infrastructure is not automated at first, the ability to scale your application can increase availability and resilience of your services in more traditional environments.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>Course Intro</title>
       <link>/posts/kubernetes-and-cloud-native-essentials-lfs250/course-intro/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/posts/kubernetes-and-cloud-native-essentials-lfs250/course-intro/</guid>
       <description>section: &amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo; categories: [&amp;ldquo;Kubernetes and Cloud Native Essentials (LFS250)&amp;rdquo;] title: &amp;ldquo;Course Intro&amp;rdquo; date: 2025-04-30 Course Introduction If you’re new to the world of modern application development and deployment, this course will give you an overview of cloud native technologies and how container orchestration systems like Kubernetes can help to implement them.
@@ -189,61 +165,9 @@ date: 2025-04-30&lt;/h2&gt;
     </item>
     
     <item>
-      <title>Sequel Machine</title>
-      <link>/posts/htb/sequel-machine/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
-      
-      <guid>/posts/htb/sequel-machine/</guid>
-      <description>title: Crocodile date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1 During our scan, which port do we find serving MySQL?
-![[Pasted image 20250606171949.png]]
-Task 2
-What community-developed MySQL version is the target running? ![[Pasted image 20250606172223.png]]
-Task 3
-When using the MySQL command line client, what switch do we need to use in order to specify a login username?
-![[Pasted image 20250606172601.png]] ![[Pasted image 20250606172607.</description>
-      <content>&lt;hr&gt;
-&lt;h2 id=&#34;categories-htb&#34;&gt;title: Crocodile
-date: 2025-06-06
-author: Nicos
-draft: false
-tags:
-section: &amp;ldquo;HTB&amp;rdquo;
-categories: [&amp;ldquo;HTB&amp;rdquo;]&lt;/h2&gt;
-&lt;h2 id=&#34;task-1&#34;&gt;Task 1&lt;/h2&gt;
-&lt;p&gt;During our scan, which port do we find serving MySQL?&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606171949.png]]&lt;/p&gt;
-&lt;p&gt;Task 2&lt;/p&gt;
-&lt;p&gt;What community-developed MySQL version is the target running?
-![[Pasted image 20250606172223.png]]&lt;/p&gt;
-&lt;p&gt;Task 3&lt;/p&gt;
-&lt;p&gt;When using the MySQL command line client, what switch do we need to use in order to specify a login username?&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606172601.png]]
-![[Pasted image 20250606172607.png]]&lt;/p&gt;
-&lt;p&gt;Task 4&lt;/p&gt;
-&lt;p&gt;Which username allows us to log into this MariaDB instance without providing a password?&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606173057.png]]&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606173723.png]]&lt;/p&gt;
-&lt;p&gt;Task 5&lt;/p&gt;
-&lt;p&gt;In SQL, what symbol can we use to specify within the query that we want to display everything inside a table?
-![[Pasted image 20250606173225.png]]&lt;/p&gt;
-&lt;p&gt;Task 6&lt;/p&gt;
-&lt;p&gt;In SQL, what symbol do we need to end each query with?
-![[Pasted image 20250606173312.png]]&lt;/p&gt;
-&lt;p&gt;Task 7&lt;/p&gt;
-&lt;p&gt;There are three databases in this MySQL instance that are common across all MySQL instances. What is the name of the fourth that&amp;rsquo;s unique to this host?&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606174838.png]]&lt;/p&gt;
-&lt;p&gt;Submit Flag&lt;/p&gt;
-&lt;p&gt;Submit root flag
-list the tables the get the contents of the table&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606175146.png]]
-![[Pasted image 20250606175047.png]]&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>Crocodile</title>
       <link>/posts/htb/crocodile/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:32 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/posts/htb/crocodile/</guid>
       <description>title: Crocodile date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1
@@ -298,49 +222,98 @@ Submit root flag&lt;/p&gt;
     </item>
     
     <item>
-      <title>Responder</title>
-      <link>/posts/htb/responder/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:32 +0300</pubDate>
+      <title>Docker Setup</title>
+      <link>/posts/docker-setup/</link>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
-      <guid>/posts/htb/responder/</guid>
-      <description>title: Responder date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1
-When visiting the web service using the IP address, what is the domain that we are being redirected to?
-![[Pasted image 20250606184518.png]] ![[Pasted image 20250606184537.png]]
-Task 2 Which scripting language is being used on the server to generate webpages? ![[Pasted image 20250606184708.png]]
-Task 3 What is the name of the URL parameter which is used to load different language versions of the webpage?</description>
+      <guid>/posts/docker-setup/</guid>
+      <description>title: Docker setup 🐳 date: 2024-05-06T12:43:45+03:00 author: Nicos draft: false tags: Docker Installation on Linux 🐋 Prerequisites:
+64-bit Linux system: Verify using uname -m. If it outputs x86_64 or amd64, you&amp;rsquo;re good to go. Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details. Steps:
+Update package lists: Bash sudo apt update # For Debian/Ubuntu-based systems sudo yum update # For Red Hat/CentOS-based systems Install dependencies: Bash sudo apt install apt-transport-https ca-certificates curl software-properties-common # For Debian/Ubuntu-based systems sudo yum groupinstall &amp;#34;Development Tools&amp;#34; # For Red Hat/CentOS-based systems Add Docker repository (choose one based on your distribution): Debian/Ubuntu:</description>
       <content>&lt;hr&gt;
-&lt;h2 id=&#34;categories-htb&#34;&gt;title: Responder
-date: 2025-06-06
+&lt;h2 id=&#34;tags&#34;&gt;title: Docker setup 🐳
+date: 2024-05-06T12:43:45+03:00
 author: Nicos
 draft: false
-tags:
-section: &amp;ldquo;HTB&amp;rdquo;
-categories: [&amp;ldquo;HTB&amp;rdquo;]&lt;/h2&gt;
-&lt;p&gt;Task 1&lt;/p&gt;
-&lt;p&gt;When visiting the web service using the IP address, what is the domain that we are being redirected to?&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606184518.png]]
-![[Pasted image 20250606184537.png]]&lt;/p&gt;
-&lt;p&gt;Task 2
-Which scripting language is being used on the server to generate webpages?
-![[Pasted image 20250606184708.png]]&lt;/p&gt;
-&lt;p&gt;Task 3
-What is the name of the URL parameter which is used to load different language versions of the webpage?&lt;/p&gt;
-&lt;p&gt;add the ip of target to /etc/hosts then map it to the domain name unika.htb&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606185713.png]]&lt;/p&gt;
-&lt;p&gt;![[Pasted image 20250606185554.png]]&lt;/p&gt;
+tags:&lt;/h2&gt;
+&lt;h1 id=&#34;docker-installation-on-linux-&#34;&gt;Docker Installation on Linux 🐋&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;data:image/png;base64,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&#34; alt=&#34;Docker Image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;64-bit Linux system: Verify using &lt;code&gt;uname -m&lt;/code&gt;. If it outputs &lt;code&gt;x86_64&lt;/code&gt; or &lt;code&gt;amd64&lt;/code&gt;, you&amp;rsquo;re good to go.&lt;/li&gt;
+&lt;li&gt;Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Steps:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Update package lists:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update  &lt;span style=&#34;color:#75715e&#34;&gt;# For Debian/Ubuntu-based systems&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum update  &lt;span style=&#34;color:#75715e&#34;&gt;# For Red Hat/CentOS-based systems&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Install dependencies:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install apt-transport-https ca-certificates curl software-properties-common  &lt;span style=&#34;color:#75715e&#34;&gt;# For Debian/Ubuntu-based systems&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum groupinstall &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Development Tools&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# For Red Hat/CentOS-based systems&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Add Docker repository (choose one based on your distribution):&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Debian/Ubuntu:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo add-apt-repository &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;lsb_release -cs&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; stable&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Red Hat/CentOS/Fedora:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum install dnf-plugins-core
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Install Docker Engine:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install docker-ce  &lt;span style=&#34;color:#75715e&#34;&gt;# For Debian/Ubuntu-based systems&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum install docker-ce  &lt;span style=&#34;color:#75715e&#34;&gt;# For Red Hat/CentOS-based systems&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Start and enable Docker service:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl start docker  &lt;span style=&#34;color:#75715e&#34;&gt;# For systemd-based systems (most modern distributions)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo service docker start  &lt;span style=&#34;color:#75715e&#34;&gt;# For older systems using SysV init&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable docker  &lt;span style=&#34;color:#75715e&#34;&gt;# To start Docker automatically at boot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Verify installation:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Run &lt;code&gt;docker run hello-world&lt;/code&gt; to download and execute a simple test image. This should output &amp;ldquo;Hello from Docker! This message shows that your installation appears to be working correctly.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Additional considerations:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding your user to the docker group: If you want to run Docker commands without using sudo each time, add your user to the docker group:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo usermod -aG docker $USER
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Log out and log back in for the group membership to take effect.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Docker Desktop:&lt;/strong&gt; For a graphical user interface for managing Docker, you can install Docker Desktop from &lt;a href=&#34;https://docs.docker.com/desktop/install/linux-install/&#34;&gt;https://docs.docker.com/desktop/install/linux-install/&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Remember to replace&lt;/strong&gt; &lt;code&gt;$USER&lt;/code&gt; &lt;strong&gt;with your actual username in the group membership&lt;/strong&gt; &lt;code&gt;command&lt;/code&gt;.&lt;/p&gt;
 </content>
     </item>
     
     <item>
-      <title>Verify</title>
+      <title>Picoctf Forensics</title>
       <link>/posts/picoctf-forensics/</link>
-      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/posts/picoctf-forensics/</guid>
-      <description>Description People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate.
+      <description>title: Verify date: 2025-01-14 author: Nicos draft: false tags: Description People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate.
 Additional details will be available after launching your challenge instance.
-Additional details: ssh into the launched instance ssh -p 53041 ctf-player@rhea.picoctf.net Using the password 1ad5be0d. Accept the fingerprint with yes, and ls once connected to begin.</description>
-      <content>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+Additional details: ssh into the launched instance ssh -p 53041 ctf-player@rhea.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;tags&#34;&gt;title: Verify
+date: 2025-01-14
+author: Nicos
+draft: false
+tags:&lt;/h2&gt;
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
 &lt;p&gt;People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate.&lt;/p&gt;
 &lt;p&gt;Additional details will be available after launching your challenge instance.&lt;/p&gt;
 &lt;h3 id=&#34;additional-details&#34;&gt;Additional details:&lt;/h3&gt;
@@ -372,15 +345,106 @@ Additional details: ssh into the launched instance ssh -p 53041 ctf-player@rhea.
     </item>
     
     <item>
-      <title>SQL Injection 💉</title>
+      <title>Responder</title>
+      <link>/posts/htb/responder/</link>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
+      
+      <guid>/posts/htb/responder/</guid>
+      <description>title: Responder date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1
+When visiting the web service using the IP address, what is the domain that we are being redirected to?
+![[Pasted image 20250606184518.png]] ![[Pasted image 20250606184537.png]]
+Task 2 Which scripting language is being used on the server to generate webpages? ![[Pasted image 20250606184708.png]]
+Task 3 What is the name of the URL parameter which is used to load different language versions of the webpage?</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;categories-htb&#34;&gt;title: Responder
+date: 2025-06-06
+author: Nicos
+draft: false
+tags:
+section: &amp;ldquo;HTB&amp;rdquo;
+categories: [&amp;ldquo;HTB&amp;rdquo;]&lt;/h2&gt;
+&lt;p&gt;Task 1&lt;/p&gt;
+&lt;p&gt;When visiting the web service using the IP address, what is the domain that we are being redirected to?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606184518.png]]
+![[Pasted image 20250606184537.png]]&lt;/p&gt;
+&lt;p&gt;Task 2
+Which scripting language is being used on the server to generate webpages?
+![[Pasted image 20250606184708.png]]&lt;/p&gt;
+&lt;p&gt;Task 3
+What is the name of the URL parameter which is used to load different language versions of the webpage?&lt;/p&gt;
+&lt;p&gt;add the ip of target to /etc/hosts then map it to the domain name unika.htb&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606185713.png]]&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606185554.png]]&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Sequel Machine</title>
+      <link>/posts/htb/sequel-machine/</link>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
+      
+      <guid>/posts/htb/sequel-machine/</guid>
+      <description>title: Crocodile date: 2025-06-06 author: Nicos draft: false tags: section: &amp;ldquo;HTB&amp;rdquo; categories: [&amp;ldquo;HTB&amp;rdquo;] Task 1 During our scan, which port do we find serving MySQL?
+![[Pasted image 20250606171949.png]]
+Task 2
+What community-developed MySQL version is the target running? ![[Pasted image 20250606172223.png]]
+Task 3
+When using the MySQL command line client, what switch do we need to use in order to specify a login username?
+![[Pasted image 20250606172601.png]] ![[Pasted image 20250606172607.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;categories-htb&#34;&gt;title: Crocodile
+date: 2025-06-06
+author: Nicos
+draft: false
+tags:
+section: &amp;ldquo;HTB&amp;rdquo;
+categories: [&amp;ldquo;HTB&amp;rdquo;]&lt;/h2&gt;
+&lt;h2 id=&#34;task-1&#34;&gt;Task 1&lt;/h2&gt;
+&lt;p&gt;During our scan, which port do we find serving MySQL?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606171949.png]]&lt;/p&gt;
+&lt;p&gt;Task 2&lt;/p&gt;
+&lt;p&gt;What community-developed MySQL version is the target running?
+![[Pasted image 20250606172223.png]]&lt;/p&gt;
+&lt;p&gt;Task 3&lt;/p&gt;
+&lt;p&gt;When using the MySQL command line client, what switch do we need to use in order to specify a login username?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606172601.png]]
+![[Pasted image 20250606172607.png]]&lt;/p&gt;
+&lt;p&gt;Task 4&lt;/p&gt;
+&lt;p&gt;Which username allows us to log into this MariaDB instance without providing a password?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606173057.png]]&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606173723.png]]&lt;/p&gt;
+&lt;p&gt;Task 5&lt;/p&gt;
+&lt;p&gt;In SQL, what symbol can we use to specify within the query that we want to display everything inside a table?
+![[Pasted image 20250606173225.png]]&lt;/p&gt;
+&lt;p&gt;Task 6&lt;/p&gt;
+&lt;p&gt;In SQL, what symbol do we need to end each query with?
+![[Pasted image 20250606173312.png]]&lt;/p&gt;
+&lt;p&gt;Task 7&lt;/p&gt;
+&lt;p&gt;There are three databases in this MySQL instance that are common across all MySQL instances. What is the name of the fourth that&amp;rsquo;s unique to this host?&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606174838.png]]&lt;/p&gt;
+&lt;p&gt;Submit Flag&lt;/p&gt;
+&lt;p&gt;Submit root flag
+list the tables the get the contents of the table&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250606175146.png]]
+![[Pasted image 20250606175047.png]]&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Sql Injection</title>
       <link>/posts/sql-injection/</link>
-      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/posts/sql-injection/</guid>
-      <description>1. What is SQL? SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.
+      <description>title: SQL Injection 💉 date: 2024-12-09 draft: false tags: 1. What is SQL? SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.
 Example SQL table containing employee data; the name of the table is &amp;rsquo;employees&#39;:
-userid first_name last_name department salary($) auth_tan 32147 Paulina Traves Accounting 46.000 P45JSI 89762 Tobi Barnett Development 77.000 TA9LL1 96134 Bob Franco Marketing 83.700 LO9S2V 34477 Abraham Holman Development 50.</description>
-      <content>&lt;h1 id=&#34;1-what-is-sql&#34;&gt;1. What is SQL?&lt;/h1&gt;
+userid first_name last_name department salary($) auth_tan 32147 Paulina Traves Accounting 46.000 P45JSI 89762 Tobi Barnett Development 77.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;tags&#34;&gt;title: SQL Injection 💉
+date: 2024-12-09
+draft: false
+tags:&lt;/h2&gt;
+&lt;h1 id=&#34;1-what-is-sql&#34;&gt;1. What is SQL?&lt;/h1&gt;
 &lt;p&gt;SQL is a standardized (ANSI in 1986, ISO in 1987) programming language which is used for managing relational databases and performing various operations on the data in them.&lt;/p&gt;
 &lt;p&gt;Example SQL table containing employee data; the name of the table is &amp;rsquo;employees&#39;:&lt;/p&gt;
 &lt;table&gt;
@@ -550,73 +614,73 @@ ADD column_you_want_to_add datatype
     </item>
     
     <item>
-      <title>Docker setup 🐳</title>
-      <link>/posts/docker-setup/</link>
-      <pubDate>Mon, 06 May 2024 12:43:45 +0300</pubDate>
+      <title>Union Sql Injection</title>
+      <link>/posts/ms-ctf/union-sql-injection/</link>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
-      <guid>/posts/docker-setup/</guid>
-      <description>Docker Installation on Linux 🐋 Prerequisites:
-64-bit Linux system: Verify using uname -m. If it outputs x86_64 or amd64, you&amp;rsquo;re good to go. Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details. Steps:
-Update package lists: Bash sudo apt update # For Debian/Ubuntu-based systems sudo yum update # For Red Hat/CentOS-based systems Install dependencies: Bash sudo apt install apt-transport-https ca-certificates curl software-properties-common # For Debian/Ubuntu-based systems sudo yum groupinstall &amp;#34;Development Tools&amp;#34; # For Red Hat/CentOS-based systems Add Docker repository (choose one based on your distribution): Debian/Ubuntu:</description>
-      <content>&lt;h1 id=&#34;docker-installation-on-linux-&#34;&gt;Docker Installation on Linux 🐋&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;data:image/png;base64,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&#34; alt=&#34;Docker Image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt;&lt;/p&gt;
+      <guid>/posts/ms-ctf/union-sql-injection/</guid>
+      <description> section: &amp;ldquo;ms ctf&amp;rdquo; categories: [&amp;ldquo;ms ctf&amp;rdquo;] title: &amp;ldquo;Union Sql Injection&amp;rdquo; date: 2025-05-21 ![[Pasted image 20250521130606.png]]
+the solution ![[Pasted image 20250521130644.png]]
+the query run was
+&amp;#39; UNION SELECT 1, &amp;#39;bob&amp;#39;, &amp;#39;5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8&amp;#39;, &amp;#39;&amp;#39;-- password: password </description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;date-2025-05-21&#34;&gt;section: &amp;ldquo;ms ctf&amp;rdquo;
+categories: [&amp;ldquo;ms ctf&amp;rdquo;]
+title: &amp;ldquo;Union Sql Injection&amp;rdquo;
+date: 2025-05-21&lt;/h2&gt;
+&lt;p&gt;![[Pasted image 20250521130606.png]]&lt;/p&gt;
+&lt;p&gt;the solution
+![[Pasted image 20250521130644.png]]&lt;/p&gt;
+&lt;p&gt;the query run was&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; UNION SELECT 1, &amp;#39;&lt;/span&gt;bob&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;, &amp;#39;&amp;#39;--
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;password: password
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+    <item>
+      <title>Unit 42 Wireshark Quiz, January 2023</title>
+      <link>/posts/unit-42-wireshark-quiz-january-2023/</link>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
+      
+      <guid>/posts/unit-42-wireshark-quiz-january-2023/</guid>
+      <description>title: Wireshark Malware Analysis date: 2025-02-7 author: Nicos draft: false tags: Quiz Question Review the pcap and answer the following questions for this month’s Unit 42 Wireshark quiz:
+When did the malicious traffic start in UTC? based on the first DNS interaction we can see the ip 192.168.1.27 What is the victim’s IP address? by visiting the statistics part of wireshark and going to the conversation section and selecting ipv4 you can see that ip addr 192.</description>
+      <content>&lt;hr&gt;
+&lt;h2 id=&#34;tags&#34;&gt;title: Wireshark Malware Analysis
+date: 2025-02-7
+author: Nicos
+draft: false
+tags:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Pasted%20image%2020250207184158.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;quiz-question&#34;&gt;Quiz Question&lt;/h2&gt;
+&lt;p&gt;Review the pcap and answer the following questions for this month’s Unit 42 Wireshark quiz:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;64-bit Linux system: Verify using &lt;code&gt;uname -m&lt;/code&gt;. If it outputs &lt;code&gt;x86_64&lt;/code&gt; or &lt;code&gt;amd64&lt;/code&gt;, you&amp;rsquo;re good to go.&lt;/li&gt;
-&lt;li&gt;Virtualization support: Check if your system supports hardware virtualization technologies like KVM. Refer to your distribution&amp;rsquo;s documentation for details.&lt;/li&gt;
+&lt;li&gt;When did the malicious traffic start in UTC?
+&lt;img src=&#34;/images/Pasted%20image%2020250207184736.png&#34; alt=&#34;Image Description&#34;&gt;
+based on the first DNS interaction we can see the ip &lt;code&gt;192.168.1.27&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;What is the victim’s IP address?
+&lt;img src=&#34;/images/Pasted%20image%2020250207185128.png&#34; alt=&#34;Image Description&#34;&gt;
+by visiting the statistics part of wireshark and going to the conversation section and selecting ipv4 you can see that ip addr &lt;code&gt;192.1688.1.27&lt;/code&gt; is involved in all the communication&lt;/li&gt;
+&lt;li&gt;What is the victim’s MAC address?
+by visiting the statistics part of wireshark and going to the conversation section and selecting &lt;code&gt;Ethernet&lt;/code&gt; you can see that mac addr &lt;code&gt;bc:ea:fa:22:74:fb&lt;/code&gt; is involved in all the communication&lt;/li&gt;
+&lt;li&gt;What is the victim’s Windows host name?
+&lt;img src=&#34;/images/Pasted%20image%2020250207185924.png&#34; alt=&#34;Image Description&#34;&gt;
+windows host name we run a search &lt;code&gt;frame matches &amp;quot;desktop&amp;quot;&lt;/code&gt; and from the results we can check the smtp frame
+we can see under the smtp protocol request parameter the host name as &lt;code&gt;DESKTOP-WIN11PC&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;What is the victim’s Windows user account name?
+&lt;img src=&#34;/images/Pasted%20image%2020250207190124.png&#34; alt=&#34;Image Description&#34;&gt;
+&lt;code&gt;windows11user&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;How much RAM does the victim’s host have?
+&lt;img src=&#34;/images/Pasted%20image%2020250207190209.png&#34; alt=&#34;Image Description&#34;&gt;
+&lt;code&gt;RAM: 32165.83 MB&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;What type of CPU is used by the victim’s host?
+&lt;img src=&#34;/images/Pasted%20image%2020250207190401.png&#34; alt=&#34;Image Description&#34;&gt;
+&lt;code&gt;intel(R) core(TM)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;What is the public IP address of the victim’s host?
+&lt;img src=&#34;/images/Pasted%20image%2020250207190513.png&#34; alt=&#34;Image Description&#34;&gt;
+&lt;code&gt;173.66.46.112&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;What type of account login data was stolen by the malware? email and web accounts&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Steps:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Update package lists:&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update  &lt;span style=&#34;color:#75715e&#34;&gt;# For Debian/Ubuntu-based systems&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum update  &lt;span style=&#34;color:#75715e&#34;&gt;# For Red Hat/CentOS-based systems&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;strong&gt;Install dependencies:&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install apt-transport-https ca-certificates curl software-properties-common  &lt;span style=&#34;color:#75715e&#34;&gt;# For Debian/Ubuntu-based systems&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum groupinstall &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Development Tools&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# For Red Hat/CentOS-based systems&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;strong&gt;Add Docker repository (choose one based on your distribution):&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Debian/Ubuntu:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo add-apt-repository &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;lsb_release -cs&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; stable&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Red Hat/CentOS/Fedora:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum install dnf-plugins-core
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;&lt;strong&gt;Install Docker Engine:&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install docker-ce  &lt;span style=&#34;color:#75715e&#34;&gt;# For Debian/Ubuntu-based systems&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum install docker-ce  &lt;span style=&#34;color:#75715e&#34;&gt;# For Red Hat/CentOS-based systems&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;&lt;strong&gt;Start and enable Docker service:&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl start docker  &lt;span style=&#34;color:#75715e&#34;&gt;# For systemd-based systems (most modern distributions)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo service docker start  &lt;span style=&#34;color:#75715e&#34;&gt;# For older systems using SysV init&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable docker  &lt;span style=&#34;color:#75715e&#34;&gt;# To start Docker automatically at boot&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;&lt;strong&gt;Verify installation:&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Run &lt;code&gt;docker run hello-world&lt;/code&gt; to download and execute a simple test image. This should output &amp;ldquo;Hello from Docker! This message shows that your installation appears to be working correctly.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Additional considerations:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Adding your user to the docker group: If you want to run Docker commands without using sudo each time, add your user to the docker group:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bash
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo usermod -aG docker $USER
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Log out and log back in for the group membership to take effect.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Docker Desktop:&lt;/strong&gt; For a graphical user interface for managing Docker, you can install Docker Desktop from &lt;a href=&#34;https://docs.docker.com/desktop/install/linux-install/&#34;&gt;https://docs.docker.com/desktop/install/linux-install/&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Remember to replace&lt;/strong&gt; &lt;code&gt;$USER&lt;/code&gt; &lt;strong&gt;with your actual username in the group membership&lt;/strong&gt; &lt;code&gt;command&lt;/code&gt;.&lt;/p&gt;
 </content>
     </item>
     
@@ -626,9 +690,11 @@ Update package lists: Bash sudo apt update # For Debian/Ubuntu-based systems sud
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>/about/about/</guid>
-      <description>Bruno Bosire Professional Statement Passionate cybersecurity professional and software developer with a strong foundation in programming and security analysis. Dedicated to continuous learning and applying technical skills to solve complex problems.
+      <description>← Back to Home
+Bruno Bosire Professional Statement Passionate cybersecurity professional and software developer with a strong foundation in programming and security analysis. Dedicated to continuous learning and applying technical skills to solve complex problems.
 Contact Information Email: your.email@example.com LinkedIn: Your LinkedIn Profile GitHub: Your GitHub Profile Phone: [Your Phone Number] Quick Links Resume Projects Blog Posts </description>
-      <content>&lt;h1 id=&#34;bruno-bosire&#34;&gt;Bruno Bosire&lt;/h1&gt;
+      <content>&lt;p&gt;&lt;a href=&#34;/&#34;&gt;← Back to Home&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;bruno-bosire&#34;&gt;Bruno Bosire&lt;/h1&gt;
 &lt;h2 id=&#34;professional-statement&#34;&gt;Professional Statement&lt;/h2&gt;
 &lt;p&gt;Passionate cybersecurity professional and software developer with a strong foundation in programming and security analysis. Dedicated to continuous learning and applying technical skills to solve complex problems.&lt;/p&gt;
 &lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
@@ -653,74 +719,76 @@ Contact Information Email: your.email@example.com LinkedIn: Your LinkedIn Profil
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>/projects/</guid>
-      <description>Featured Projects Project 1: [Project Name] [Completion Date]
-Overview Brief description of the project, its purpose, and your role.
-Technologies Used Technology 1 Technology 2 Technology 3 Key Features Feature 1 Feature 2 Feature 3 Links GitHub Repository Live Demo Project 2: [Project Name] [Completion Date]
-Overview Brief description of the project, its purpose, and your role.
-Technologies Used Technology 1 Technology 2 Technology 3 Key Features Feature 1 Feature 2 Feature 3 Links GitHub Repository Live Demo Project 3: [Project Name] [Completion Date]</description>
+      <description>Featured Projects Data Engineering: Metro-bikeshare 29-03-2025
+Overview This project is designed to extract, transform, and load (ETL) Metro Trips data from a CSV source to a Snowflake data warehouse. It utilizes Apache Airflow for orchestration, AWS S3 for intermediate storage, dbt for data transformation, Terraform for infrastructure automation, and Power BI for reporting and visualization. The goal of this workflow is to ensure data consistency, scalability, and efficient analytics for Metro Trips data processing.</description>
       <content>&lt;h1 id=&#34;featured-projects&#34;&gt;Featured Projects&lt;/h1&gt;
-&lt;h2 id=&#34;project-1-project-name&#34;&gt;Project 1: [Project Name]&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;[Completion Date]&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-engineering-metro-bikeshare&#34;&gt;Data Engineering: Metro-bikeshare&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;29-03-2025&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
-&lt;p&gt;Brief description of the project, its purpose, and your role.&lt;/p&gt;
+&lt;p&gt;This project is designed to extract, transform, and load (ETL) Metro Trips data from a CSV source to a Snowflake data warehouse. It utilizes Apache Airflow for orchestration, AWS S3 for intermediate storage, dbt for data transformation, Terraform for infrastructure automation, and Power BI for reporting and visualization. The goal of this workflow is to ensure data consistency, scalability, and efficient analytics for Metro Trips data processing.&lt;/p&gt;
 &lt;h3 id=&#34;technologies-used&#34;&gt;Technologies Used&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Technology 1&lt;/li&gt;
-&lt;li&gt;Technology 2&lt;/li&gt;
-&lt;li&gt;Technology 3&lt;/li&gt;
+&lt;li&gt;Apache Airflow: Manages and schedules the ETL pipeline.&lt;/li&gt;
+&lt;li&gt;AWS S3: Temporary storage layer before transferring data to Snowflake.&lt;/li&gt;
+&lt;li&gt;Snowflake: A scalable cloud-based data warehouse for storing raw and processed data.&lt;/li&gt;
+&lt;li&gt;dbt (Data Build Tool): Transforms raw data into structured, analytics-ready datasets.&lt;/li&gt;
+&lt;li&gt;Terraform: Infrastructure as Code (IaC) tool used for provisioning AWS EC2 instances to run Airflow.&lt;/li&gt;
+&lt;li&gt;Power BI: Creates dynamic dashboards for data visualization and business intelligence.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Feature 1&lt;/li&gt;
-&lt;li&gt;Feature 2&lt;/li&gt;
-&lt;li&gt;Feature 3&lt;/li&gt;
+&lt;li&gt;Extracting raw data from source and processing data for storage in AWS S3&lt;/li&gt;
+&lt;li&gt;Storing data in snowflake warehouse&lt;/li&gt;
+&lt;li&gt;Transformation of raw data into structured data&lt;/li&gt;
+&lt;li&gt;Creating dashboards to present the findings&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yourusername/project1&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://demo-link.com&#34;&gt;Live Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/codac-black/metro-bikeshare.git&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;project-2-project-name&#34;&gt;Project 2: [Project Name]&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;[Completion Date]&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;procurement-kpi-analysis-procurement-kpi-analysis&#34;&gt;Procurement KPI Analysis: Procurement KPI Analysis&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;29/05/2025&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;overview-1&#34;&gt;Overview&lt;/h3&gt;
-&lt;p&gt;Brief description of the project, its purpose, and your role.&lt;/p&gt;
+&lt;p&gt;A deep dive into procurement operations using real-world purchase order data (2022–2023), empowering businesses with insights on supplier performance, cost efficiency, delivery trends, and risk mitigation.&lt;/p&gt;
 &lt;h3 id=&#34;technologies-used-1&#34;&gt;Technologies Used&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Technology 1&lt;/li&gt;
-&lt;li&gt;Technology 2&lt;/li&gt;
-&lt;li&gt;Technology 3&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;key-features-1&#34;&gt;Key Features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Feature 1&lt;/li&gt;
-&lt;li&gt;Feature 2&lt;/li&gt;
-&lt;li&gt;Feature 3&lt;/li&gt;
+&lt;li&gt;📌 Supplier performance benchmarking&lt;/li&gt;
+&lt;li&gt;📉 Cost savings prediction via ML&lt;/li&gt;
+&lt;li&gt;🔍 Defect &amp;amp; compliance tracking&lt;/li&gt;
+&lt;li&gt;📊 KPI dashboard visualizations&lt;/li&gt;
+&lt;li&gt;🔮 Price trend forecasting&lt;/li&gt;
+&lt;li&gt;🔥 High-risk supplier detection&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;links-1&#34;&gt;Links&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yourusername/project2&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://demo-link.com&#34;&gt;Live Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/codac-black/Data-Analytics-Projects.git&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;project-3-project-name&#34;&gt;Project 3: [Project Name]&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;[Completion Date]&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;kenya-airways-review-kenya-airways-customer-review-analysis&#34;&gt;Kenya Airways Review: Kenya Airways Customer Review Analysis&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;12/03/2025&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;overview-2&#34;&gt;Overview&lt;/h3&gt;
-&lt;p&gt;Brief description of the project, its purpose, and your role.&lt;/p&gt;
+&lt;p&gt;This project analyzes customer reviews of Kenya Airways collected from Airline Quality to provide insights into passenger satisfaction, service quality metrics, and trends over time. The analysis helps identify strengths, weaknesses, and improvement opportunities for Kenya Airways&amp;rsquo; services.&lt;/p&gt;
 &lt;h3 id=&#34;technologies-used-2&#34;&gt;Technologies Used&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Technology 1&lt;/li&gt;
-&lt;li&gt;Technology 2&lt;/li&gt;
-&lt;li&gt;Technology 3&lt;/li&gt;
+&lt;li&gt;Data Collection: Python, BeautifulSoup, Requests&lt;/li&gt;
+&lt;li&gt;Data Processing: Pandas, NumPy&lt;/li&gt;
+&lt;li&gt;Data Visualization: Tableau Public&lt;/li&gt;
+&lt;li&gt;Geospatial Analysis: Integration with Mapbox via Tableau&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;key-features-2&#34;&gt;Key Features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Feature 1&lt;/li&gt;
-&lt;li&gt;Feature 2&lt;/li&gt;
-&lt;li&gt;Feature 3&lt;/li&gt;
+&lt;li&gt;Collects basic review information (title, reviewer name, date, etc.)&lt;/li&gt;
+&lt;li&gt;Extracts ratings for specific service aspects (seat comfort, staff service, etc.)&lt;/li&gt;
+&lt;li&gt;Records reviewer metadata (traveler type, seat class, route, etc.)&lt;/li&gt;
+&lt;li&gt;Captures reviewer location data for geographical analysis&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;links-2&#34;&gt;Links&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yourusername/project3&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://demo-link.com&#34;&gt;Live Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/codac-black/kenya-airways-review.git&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://public.tableau.com/views/kenyaairwaysreview/Dashboard1&#34;&gt;Live Demo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </item>
@@ -745,7 +813,7 @@ Technologies Used Technology 1 Technology 2 Technology 3 Key Features Feature 1 
 📍 Nairobi, Kenya
 📞 +254716981689
 📧 maisibabruno@gmail.com
-🔗 LinkedIn | GitHub | Portfolio | Download Resume 👨‍🎓 Education Kabarak University
+🔗 LinkedIn | GitHub | Portfolio | 👨‍🎓 Education Kabarak University
 Bachelor of Science in Computer Science
 📍 Nakuru, Kenya | 2020 – 2024
 Kiage Tumaini High School
@@ -754,11 +822,10 @@ Kiage Tumaini High School
 📍 Karen, Nairobi | Jun 2023 – Sep 2023</description>
       <content>&lt;h1 id=&#34;bruno-maisiba-bosire&#34;&gt;Bruno Maisiba Bosire&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Data Analyst | ML Engineer | Python &amp;amp; SQL Developer&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;download-resumestaticfilesbrunomaisibabosireresumepdf&#34;&gt;📍 Nairobi, Kenya&lt;br&gt;
+&lt;h2 id=&#34;-linkedinhttpswwwlinkedincominbrunomaisiba--githubhttpsgithubcomcodac-black--portfoliohttpsnicosblognetlifyapp-&#34;&gt;📍 Nairobi, Kenya&lt;br&gt;
 📞 +254716981689&lt;br&gt;
 📧 &lt;a href=&#34;mailto:maisibabruno@gmail.com&#34;&gt;maisibabruno@gmail.com&lt;/a&gt;&lt;br&gt;
-🔗 &lt;a href=&#34;https://www.linkedin.com/in/brunomaisiba&#34;&gt;LinkedIn&lt;/a&gt; | &lt;a href=&#34;https://github.com/codac-black&#34;&gt;GitHub&lt;/a&gt; | &lt;a href=&#34;https://nicosblog.netlify.app/&#34;&gt;Portfolio&lt;/a&gt; |
-&lt;a href=&#34;../static/files/BrunoMaisibaBosireResume.pdf&#34;&gt;Download Resume&lt;/a&gt;&lt;/h2&gt;
+🔗 &lt;a href=&#34;https://www.linkedin.com/in/brunomaisiba&#34;&gt;LinkedIn&lt;/a&gt; | &lt;a href=&#34;https://github.com/codac-black&#34;&gt;GitHub&lt;/a&gt; | &lt;a href=&#34;https://nicosblog.netlify.app/&#34;&gt;Portfolio&lt;/a&gt; |&lt;/h2&gt;
 &lt;h2 id=&#34;-education&#34;&gt;👨‍🎓 Education&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Kabarak University&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;Bachelor of Science in Computer Science&lt;/em&gt;&lt;br&gt;
@@ -828,47 +895,6 @@ Network architecture, system optimization &amp;amp; security&lt;/li&gt;
 &lt;li&gt;Swahili (Fluent)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Wireshark Malware Analysis</title>
-      <link>/posts/unit-42-wireshark-quiz-january-2023/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/unit-42-wireshark-quiz-january-2023/</guid>
-      <description>Quiz Question Review the pcap and answer the following questions for this month’s Unit 42 Wireshark quiz:
-When did the malicious traffic start in UTC? based on the first DNS interaction we can see the ip 192.168.1.27 What is the victim’s IP address? by visiting the statistics part of wireshark and going to the conversation section and selecting ipv4 you can see that ip addr 192.1688.1.27 is involved in all the communication What is the victim’s MAC address?</description>
-      <content>&lt;p&gt;&lt;img src=&#34;/images/Pasted%20image%2020250207184158.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;quiz-question&#34;&gt;Quiz Question&lt;/h2&gt;
-&lt;p&gt;Review the pcap and answer the following questions for this month’s Unit 42 Wireshark quiz:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;When did the malicious traffic start in UTC?
-&lt;img src=&#34;/images/Pasted%20image%2020250207184736.png&#34; alt=&#34;Image Description&#34;&gt;
-based on the first DNS interaction we can see the ip &lt;code&gt;192.168.1.27&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What is the victim’s IP address?
-&lt;img src=&#34;/images/Pasted%20image%2020250207185128.png&#34; alt=&#34;Image Description&#34;&gt;
-by visiting the statistics part of wireshark and going to the conversation section and selecting ipv4 you can see that ip addr &lt;code&gt;192.1688.1.27&lt;/code&gt; is involved in all the communication&lt;/li&gt;
-&lt;li&gt;What is the victim’s MAC address?
-by visiting the statistics part of wireshark and going to the conversation section and selecting &lt;code&gt;Ethernet&lt;/code&gt; you can see that mac addr &lt;code&gt;bc:ea:fa:22:74:fb&lt;/code&gt; is involved in all the communication&lt;/li&gt;
-&lt;li&gt;What is the victim’s Windows host name?
-&lt;img src=&#34;/images/Pasted%20image%2020250207185924.png&#34; alt=&#34;Image Description&#34;&gt;
-windows host name we run a search &lt;code&gt;frame matches &amp;quot;desktop&amp;quot;&lt;/code&gt; and from the results we can check the smtp frame
-we can see under the smtp protocol request parameter the host name as &lt;code&gt;DESKTOP-WIN11PC&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What is the victim’s Windows user account name?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190124.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;windows11user&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;How much RAM does the victim’s host have?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190209.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;RAM: 32165.83 MB&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What type of CPU is used by the victim’s host?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190401.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;intel(R) core(TM)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What is the public IP address of the victim’s host?
-&lt;img src=&#34;/images/Pasted%20image%2020250207190513.png&#34; alt=&#34;Image Description&#34;&gt;
-&lt;code&gt;173.66.46.112&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;What type of account login data was stolen by the malware? email and web accounts&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     </item>
     

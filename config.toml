@@ -64,13 +64,13 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Nicos' Portfolio"
+    title = "Bruno's Portfolio"
 
     [languages.en.params]
       subtitle = "Cybersecurity Professional & Software Developer"
-      owner = "Nicos"
+      owner = "Bruno Bosire"
       keywords = "cybersecurity, software development, R programming, Python"
-      copyright = "© 2024 Nicos. All rights reserved."
+      copyright = "© 2024 Bruno Bosire. All rights reserved."
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
@@ -82,7 +82,7 @@ paginate = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Nicos"
+        logoText = "Bruno"
         logoHomeLink = "/"
 
       [languages.en.menu]

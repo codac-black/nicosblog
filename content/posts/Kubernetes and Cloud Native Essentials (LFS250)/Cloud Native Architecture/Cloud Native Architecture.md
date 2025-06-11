@@ -1,6 +1,6 @@
 ---
 title: "Cloud Native Architecture"
-date: 2025-06-10T17:16:34+03:00
+date: 2025-06-11T12:01:02+03:00
 section: "Kubernetes and Cloud Native Essentials (LFS250)"
 categories: ["Kubernetes and Cloud Native Essentials (LFS250)", "Cloud Native Architecture"]
 ---

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="main">
+    <article class="post-single">
+        <header class="post-header">
+            <h1 class="post-title">{{ .Title }}</h1>
+            {{ partial "back-nav.html" . }}
+        </header>
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+        <footer class="post-footer">
+            {{ partial "back-nav.html" . }}
+        </footer>
+    </article>
+</main>
+{{ end }} 

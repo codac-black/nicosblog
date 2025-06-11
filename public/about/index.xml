@@ -13,9 +13,11 @@
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>/about/about/</guid>
-      <description>Bruno Bosire Professional Statement Passionate cybersecurity professional and software developer with a strong foundation in programming and security analysis. Dedicated to continuous learning and applying technical skills to solve complex problems.
+      <description>← Back to Home
+Bruno Bosire Professional Statement Passionate cybersecurity professional and software developer with a strong foundation in programming and security analysis. Dedicated to continuous learning and applying technical skills to solve complex problems.
 Contact Information Email: your.email@example.com LinkedIn: Your LinkedIn Profile GitHub: Your GitHub Profile Phone: [Your Phone Number] Quick Links Resume Projects Blog Posts </description>
-      <content>&lt;h1 id=&#34;bruno-bosire&#34;&gt;Bruno Bosire&lt;/h1&gt;
+      <content>&lt;p&gt;&lt;a href=&#34;/&#34;&gt;← Back to Home&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;bruno-bosire&#34;&gt;Bruno Bosire&lt;/h1&gt;
 &lt;h2 id=&#34;professional-statement&#34;&gt;Professional Statement&lt;/h2&gt;
 &lt;p&gt;Passionate cybersecurity professional and software developer with a strong foundation in programming and security analysis. Dedicated to continuous learning and applying technical skills to solve complex problems.&lt;/p&gt;
 &lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;

@@ -1,4 +1,8 @@
 ---
+title: "Picoctf Forensics"
+date: 2025-06-11T12:01:02+03:00
+---
+---
 title: Verify
 date: 2025-01-14
 author: Nicos

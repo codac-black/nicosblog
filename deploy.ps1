@@ -51,7 +51,7 @@ Write-Host "Processing front matter for proper sectioning..."
 python .\frontmatter.py "$destinationPath"
 
 Write-Host "Creating section index files..."
-# Get all subdirectories in posts
+# Get all subdirectories in posts (recursive search)
 $postDirs = Get-ChildItem -Path $destinationPath -Directory -Recurse
 
 foreach ($dir in $postDirs) {
@@ -76,14 +76,24 @@ This section contains posts related to $sectionTitle.
     }
 }
 
-# Alternative PowerShell front matter processing (if Python script fails)
-Write-Host "Backup front matter processing with PowerShell..."
-Get-ChildItem -Path $destinationPath -Recurse -Filter "*.md" | ForEach-Object {
-    $file = $_
+# Enhanced PowerShell front matter processing with recursive search
+Write-Host "Processing front matter for all markdown files (recursive search)..."
+
+# Find all markdown files recursively in the posts directory and subdirectories
+$markdownFiles = Get-ChildItem -Path $destinationPath -Recurse -Filter "*.md" | Where-Object { 
+    $_.Name -ne "_index.md" -and $_.Name -ne "index.md" 
+}
+
+Write-Host "Found $($markdownFiles.Count) markdown files to process..."
+
+foreach ($file in $markdownFiles) {
+    Write-Host "Processing: $($file.FullName.Replace($destinationPath, ''))"
+    
+    # Calculate relative path from posts directory
     $relativePath = $file.DirectoryName.Replace($destinationPath, "").TrimStart('\', '/')
     
-    if ($relativePath) {
-        $content = Get-Content $file.FullName -Raw -ErrorAction SilentlyContinue
+    try {
+        $content = Get-Content $file.FullName -Raw -ErrorAction Stop
         
         if ($null -ne $content -and $content.Length -gt 0) {
             # Check if front matter exists
@@ -95,51 +105,93 @@ Get-ChildItem -Path $destinationPath -Recurse -Filter "*.md" | ForEach-Object {
                 $frontMatterLines = $frontMatter -split "[\r\n]+"
                 $hasSection = $frontMatterLines | Where-Object { $_ -match '^\s*section\s*:' }
                 $hasCategories = $frontMatterLines | Where-Object { $_ -match '^\s*categories\s*:' }
+                $hasTitle = $frontMatterLines | Where-Object { $_ -match '^\s*title\s*:' }
+                $hasDate = $frontMatterLines | Where-Object { $_ -match '^\s*date\s*:' }
                 
-                # Add section if not present
-                if (-not $hasSection) {
+                $frontMatterUpdated = $false
+                
+                # Add title if not present
+                if (-not $hasTitle) {
+                    $title = [System.IO.Path]::GetFileNameWithoutExtension($file.Name) -replace '-', ' ' -replace '_', ' '
+                    $title = (Get-Culture).TextInfo.ToTitleCase($title.ToLower())
+                    $frontMatter += "`ntitle: `"$title`""
+                    $frontMatterUpdated = $true
+                }
+                
+                # Add date if not present
+                if (-not $hasDate) {
+                    $currentDate = Get-Date -Format "yyyy-MM-ddTHH:mm:ssK"
+                    $frontMatter += "`ndate: $currentDate"
+                    $frontMatterUpdated = $true
+                }
+                
+                # Add section if not present and we have a relative path
+                if (-not $hasSection -and $relativePath) {
                     $pathParts = $relativePath -split '[\\/]'
                     $sectionName = $pathParts[0]
                     $frontMatter += "`nsection: `"$sectionName`""
+                    $frontMatterUpdated = $true
                 }
                 
-                # Add categories if not present
-                if (-not $hasCategories) {
+                # Add categories if not present and we have a relative path
+                if (-not $hasCategories -and $relativePath) {
                     $pathParts = $relativePath -split '[\\/]'
                     $categoryList = $pathParts | ForEach-Object { "`"$_`"" }
                     $categoriesString = $categoryList -join ', '
                     $frontMatter += "`ncategories: [$categoriesString]"
+                    $frontMatterUpdated = $true
                 }
                 
-                $newContent = "---`n$frontMatter`n---`n$body"
-                Set-Content -Path $file.FullName -Value $newContent -Encoding UTF8 -NoNewline
-                Write-Host "Updated front matter for: $($file.Name)"
+                # Update file only if changes were made
+                if ($frontMatterUpdated) {
+                    $newContent = "---`n$frontMatter`n---`n$body"
+                    Set-Content -Path $file.FullName -Value $newContent -Encoding UTF8 -NoNewline
+                    Write-Host "  ✓ Updated front matter"
+                } else {
+                    Write-Host "  - No updates needed"
+                }
             }
             else {
-                # No front matter exists, create basic front matter
-                $pathParts = $relativePath -split '[\\/]'
-                $sectionName = $pathParts[0]
-                $categoryList = $pathParts | ForEach-Object { "`"$_`"" }
-                $categoriesString = $categoryList -join ', '
+                # No front matter exists, create complete front matter
                 $title = [System.IO.Path]::GetFileNameWithoutExtension($file.Name) -replace '-', ' ' -replace '_', ' '
                 $title = (Get-Culture).TextInfo.ToTitleCase($title.ToLower())
-                
                 $currentDate = Get-Date -Format "yyyy-MM-ddTHH:mm:ssK"
-                $frontMatter = @"
----
+                
+                $frontMatterContent = @"
 title: "$title"
 date: $currentDate
-section: "$sectionName"
-categories: [$categoriesString]
+"@
+                
+                # Add section and categories if we have a relative path
+                if ($relativePath) {
+                    $pathParts = $relativePath -split '[\\/]'
+                    $sectionName = $pathParts[0]
+                    $categoryList = $pathParts | ForEach-Object { "`"$_`"" }
+                    $categoriesString = $categoryList -join ', '
+                    
+                    $frontMatterContent += "`nsection: `"$sectionName`""
+                    $frontMatterContent += "`ncategories: [$categoriesString]"
+                }
+                
+                $frontMatter = @"
+---
+$frontMatterContent
 ---
 "@
                 $newContent = "$frontMatter`n$content"
                 Set-Content -Path $file.FullName -Value $newContent -Encoding UTF8 -NoNewline
-                Write-Host "Created front matter for: $($file.Name)"
+                Write-Host "  ✓ Created complete front matter"
             }
+        } else {
+            Write-Host "  ⚠ Skipped (empty file)"
         }
     }
+    catch {
+        Write-Warning "  ✗ Failed to process $($file.Name): $($_.Exception.Message)"
+    }
 }
+
+Write-Host "Front matter processing completed!"
 
 # Step 2: Build the Hugo site
 Write-Host "Building the Hugo site..."

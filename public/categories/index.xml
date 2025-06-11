@@ -6,11 +6,11 @@
     <description>Recent content in Categories on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Jun 2025 17:16:34 +0300</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jun 2025 12:01:02 +0300</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloud Native Architecture</title>
       <link>/categories/cloud-native-architecture/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/categories/cloud-native-architecture/</guid>
       <description></description>
@@ -18,9 +18,19 @@
     </item>
     
     <item>
+      <title>HTB</title>
+      <link>/categories/htb/</link>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
+      
+      <guid>/categories/htb/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
       <title>Kubernetes and Cloud Native Essentials (LFS250)</title>
       <link>/categories/kubernetes-and-cloud-native-essentials-lfs250/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/categories/kubernetes-and-cloud-native-essentials-lfs250/</guid>
       <description></description>
@@ -30,39 +40,9 @@
     <item>
       <title>ms ctf</title>
       <link>/categories/ms-ctf/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:01:02 +0300</pubDate>
       
       <guid>/categories/ms-ctf/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Packet analysis</title>
-      <link>/categories/packet-analysis/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
-      
-      <guid>/categories/packet-analysis/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>PicoCTF</title>
-      <link>/categories/picoctf/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:34 +0300</pubDate>
-      
-      <guid>/categories/picoctf/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>HTB</title>
-      <link>/categories/htb/</link>
-      <pubDate>Tue, 10 Jun 2025 17:16:33 +0300</pubDate>
-      
-      <guid>/categories/htb/</guid>
       <description></description>
       <content></content>
     </item>

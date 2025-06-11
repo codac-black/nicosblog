@@ -9,7 +9,6 @@ title = "resume"
 📞 +254716981689  
 📧 maisibabruno@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/brunomaisiba) | [GitHub](https://github.com/codac-black) | [Portfolio](https://nicosblog.netlify.app/) |
-[Download Resume](../static/files/BrunoMaisibaBosireResume.pdf)
 ---
 
 ## 👨‍🎓 Education

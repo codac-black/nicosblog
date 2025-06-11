@@ -3,6 +3,7 @@ title: "About Me"
 date: 2024-03-19
 draft: false
 ---
+[← Back to Home](/) 
 
 # Bruno Bosire
 
