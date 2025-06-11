@@ -54,7 +54,7 @@ I'm Bruno Bosire, a cybersecurity professional and software developer. This site
 </style>
 
 <div class="hero">
-  <img src="../static/images/myimage.jpg" alt="Bruno Maisiba">
+  <img src="/images/myimage.jpg" alt="Bruno Maisiba">
   <div class="hero-text">
     <h1>👋🏾 Hi, I'm Bruno Maisiba</h1>
     <strong>Data Analyst | ML Engineer | Python & SQL Developer</strong><br>
