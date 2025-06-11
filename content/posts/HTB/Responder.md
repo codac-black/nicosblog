@@ -1,6 +1,6 @@
 ---
 title: "Responder"
-date: 2025-06-11T12:01:02+03:00
+date: 2025-06-11T12:32:29+03:00
 section: "HTB"
 categories: ["HTB"]
 ---

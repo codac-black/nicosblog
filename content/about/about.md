@@ -11,9 +11,9 @@ draft: false
 Passionate cybersecurity professional and software developer with a strong foundation in programming and security analysis. Dedicated to continuous learning and applying technical skills to solve complex problems.
 
 ## Contact Information
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
+- Email: [your.email@example.com](mailto:maisibabruno@gmail.com)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/brunomaisiba)
+- GitHub: [Your GitHub Profile](https://github.com/codac-black)
 - Phone: [Your Phone Number]
 
 ## Quick Links

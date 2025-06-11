@@ -76,6 +76,5 @@ Skilled in Python, SQL, Power BI, and Tableau — I've led projects across indus
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/brunomaisiba)  
 - 🔗 [GitHub](https://github.com/codac-black)  
-- 🔗 [Portfolio](https://nicosblog.netlify.app/)
 
 ---

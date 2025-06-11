@@ -1,6 +1,6 @@
 ---
 title: "Sql Injection"
-date: 2025-06-11T12:01:02+03:00
+date: 2025-06-11T12:32:26+03:00
 ---
 ---
 title: SQL Injection 💉
